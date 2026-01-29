@@ -1,5 +1,10 @@
 ## Hi there 👋
 
+## Social Profiles
+[Reddit](https://www.reddit.com/user/ElectionBeginning322/)
+
+[CoderLegion](https://coderlegion.com/user/LegendsDaD)
+
 ## 🔭 I’m currently working on
 1) CalCulus v0.5.0
 2) Copilot CLI App Generator
