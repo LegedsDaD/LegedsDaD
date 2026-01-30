@@ -1,5 +1,7 @@
 ## Hi there 👋
+### 🌐 Join Me on CoderLegion
 
+[![CoderLegion](https://coderlegion.com/cl_badge_logo1.png)](https://coderlegion.com/user/LegendsDaD) Check out my articles and community posts on [CoderLegion!](https://coderlegion.com/user/LegendsDaD)
 ## Social Profiles
 [Reddit](https://www.reddit.com/user/ElectionBeginning322/)
 
