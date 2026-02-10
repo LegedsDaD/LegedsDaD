@@ -7,6 +7,7 @@
 
 [CoderLegion](https://coderlegion.com/user/LegendsDaD)
 
+[Dev.to](https://dev.to/legedsdad)
 ## 🔭 I’m currently working on
 1) CalCulus v0.5.0
 2) Copilot CLI App Generator
