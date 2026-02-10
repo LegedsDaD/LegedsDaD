@@ -1,11 +1,7 @@
 ## Hi there 👋
 ### 🌐 Join Me on CoderLegion
 
-[![CoderLegion](https://coderlegion.com/cl_badge_logo1.png)](https://coderlegion.com/user/LegendsDaD) Check out my articles and community posts on [CoderLegion!](https://coderlegion.com/user/LegendsDaD)
-
-Sharing my latest write-up on Coderlegion, check it out! https://coderlegion.com/10788/best-youtube-channels-for-learning-coding
-Sharing my latest write-up on Coderlegion, check it out! https://coderlegion.com/10714/the-importance-of-ai-agents
-Sharing my latest write-up on Coderlegion, check it out! https://coderlegion.com/10652/calculus-the-lib
+[![CoderLegion](https://coderlegion.com/cl_badge_logo1.png)](https://coderlegion.com/user/LegendsDaD) 
 ## Social Profiles
 [Reddit](https://www.reddit.com/user/ElectionBeginning322/)
 
