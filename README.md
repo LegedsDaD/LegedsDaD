@@ -20,6 +20,7 @@
   <img src="https://github-profile-trophy.vercel.app/?username=LegedsDaD&theme=monokai" alt="LegedsDaD GitHub Trophies" />
 </p>
 
+[![trophy](http://localhost:8080/?username=LegedsDaD)](https://github.com/ryo-ma/github-profile-trophy)
 ## 🔭 I’m currently working on
 1) CalCulus v0.5.0
 2) Copilot CLI App Generator
