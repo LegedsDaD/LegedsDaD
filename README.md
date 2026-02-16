@@ -14,7 +14,11 @@
 
 [![YOLO](https://img.shields.io/badge/Achievement-YOLO-ffd700?style=for-the-badge&logo=github&labelColor=181717)](https://github.com/users/LegedsDaD/achievements/yolo)
 
-[![PullShark](https://img.shields.io/badge/Achievement-PullShark-ffd700?style=for-the-badge&logo=github&labelColor=181717)](https://github.com/users/LegedsDaD/achievements/quickdraw)
+[![PullShark](https://img.shields.io/badge/Achievement-PullShark-ffd700?style=for-the-badge&logo=github&labelColor=1817
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=LegedsDaD&theme=monokai" alt="LegedsDaD GitHub Trophies" />
+</p>
 
 ## 🔭 I’m currently working on
 1) CalCulus v0.5.0
