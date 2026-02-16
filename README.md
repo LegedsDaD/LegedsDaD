@@ -8,6 +8,14 @@
 [CoderLegion](https://coderlegion.com/user/LegendsDaD)
 
 [Dev.to](https://dev.to/legedsdad)
+
+## 🤗Decorations
+[![Quickdraw](https://img.shields.io/badge/Achievement-Quickdraw-ffd700?style=for-the-badge&logo=github&labelColor=181717)](https://github.com/users/LegedsDaD/achievements/quickdraw)
+
+[![YOLO](https://img.shields.io/badge/Achievement-YOLO-ffd700?style=for-the-badge&logo=github&labelColor=181717)](https://github.com/users/LegedsDaD/achievements/yolo)
+
+[![PullShark](https://img.shields.io/badge/Achievement-PullShark-ffd700?style=for-the-badge&logo=github&labelColor=181717)](https://github.com/users/LegedsDaD/achievements/quickdraw)
+
 ## 🔭 I’m currently working on
 1) CalCulus v0.5.0
 2) Copilot CLI App Generator
