@@ -1,0 +1,179 @@
+name: AI Robot vs Snake
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # Checkout output branch safely
+      - name: Checkout output branch
+        uses: actions/checkout@v4
+        with:
+          ref: output
+        continue-on-error: true
+
+      - name: Create dist folder
+        run: mkdir -p dist
+
+      ############################################
+      # Generate Snake
+      ############################################
+
+      - name: Generate snake svg
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: dist/snake.svg
+
+      ############################################
+      # Generate Robot vs Snake SVG
+      ############################################
+
+      - name: Generate AI Robot Hunter
+        run: |
+
+          cat <<'EOF' > dist/robot-vs-snake.svg
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="900"
+               height="300"
+               viewBox="0 0 900 300">
+
+          <style>
+
+          .robot {
+            animation: walk 6s infinite linear;
+          }
+
+          .laser {
+            stroke: red;
+            stroke-width: 4;
+            stroke-dasharray: 12;
+            animation: shoot 0.4s infinite linear;
+          }
+
+          .eye {
+            animation: scan 1s infinite alternate;
+          }
+
+          @keyframes walk {
+            0% { transform: translateX(0px); }
+            50% { transform: translateX(600px); }
+            100% { transform: translateX(0px); }
+          }
+
+          @keyframes shoot {
+            from { stroke-dashoffset: 20; opacity:1; }
+            to { stroke-dashoffset: 0; opacity:0.3; }
+          }
+
+          @keyframes scan {
+            from { fill: red; }
+            to { fill: yellow; }
+          }
+
+          </style>
+
+
+          <!-- Contribution Snake -->
+          <image href="snake.svg"
+                 x="0"
+                 y="50"
+                 width="900"
+                 height="200"/>
+
+
+          <!-- Robot -->
+          <g class="robot">
+
+            <!-- head -->
+            <rect x="50" y="80" width="50" height="50"
+                  rx="10"
+                  fill="cyan"/>
+
+            <!-- eye -->
+            <circle cx="85" cy="105"
+                    r="6"
+                    class="eye"/>
+
+            <!-- body -->
+            <rect x="60" y="130"
+                  width="30"
+                  height="60"
+                  fill="cyan"/>
+
+            <!-- legs -->
+            <rect x="60"
+                  y="190"
+                  width="10"
+                  height="30"
+                  fill="cyan"/>
+
+            <rect x="80"
+                  y="190"
+                  width="10"
+                  height="30"
+                  fill="cyan"/>
+
+            <!-- laser -->
+            <line x1="100"
+                  y1="110"
+                  x2="850"
+                  y2="110"
+                  class="laser"/>
+
+          </g>
+
+
+          <!-- explosion -->
+          <circle cx="850"
+                  cy="110"
+                  r="8"
+                  fill="red">
+
+            <animate attributeName="r"
+                     values="5;18;5"
+                     dur="0.5s"
+                     repeatCount="indefinite"/>
+
+            <animate attributeName="opacity"
+                     values="1;0.2;1"
+                     dur="0.5s"
+                     repeatCount="indefinite"/>
+
+          </circle>
+
+          </svg>
+          EOF
+
+
+      ############################################
+      # Commit safely
+      ############################################
+
+      - name: Commit files
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add dist/*.svg
+          git commit -m "Update AI robot vs snake animation" || echo "No changes"
+
+
+      ############################################
+      # Push safely
+      ############################################
+
+      - name: Push branch
+        uses: ad-m/github-push-action@master
+        with:
+          branch: output
+          github_token: ${{ secrets.GITHUB_TOKEN }}
