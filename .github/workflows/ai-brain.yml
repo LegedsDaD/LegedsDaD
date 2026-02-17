@@ -1,0 +1,64 @@
+name: Generate AI Brain Animation
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  brain:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Create dist folder
+        run: mkdir -p dist
+
+      - name: Generate AI Brain SVG
+        run: |
+          cat <<EOF > dist/ai-brain.svg
+          <svg xmlns="http://www.w3.org/2000/svg" width="400" height="300">
+
+            <style>
+              .node {
+                fill: #00ffcc;
+                animation: pulse 2s infinite ease-in-out;
+              }
+
+              .link {
+                stroke: #00ffaa;
+                stroke-width: 2;
+                opacity: 0.5;
+              }
+
+              @keyframes pulse {
+                0% { r: 4; opacity: 0.5; }
+                50% { r: 8; opacity: 1; }
+                100% { r: 4; opacity: 0.5; }
+              }
+            </style>
+
+            <!-- Connections -->
+            <line x1="100" y1="150" x2="200" y2="80" class="link"/>
+            <line x1="200" y1="80" x2="300" y2="150" class="link"/>
+            <line x1="100" y1="150" x2="200" y2="220" class="link"/>
+            <line x1="200" y1="220" x2="300" y2="150" class="link"/>
+
+            <!-- Nodes -->
+            <circle cx="100" cy="150" r="5" class="node"/>
+            <circle cx="200" cy="80" r="5" class="node" style="animation-delay:0.5s"/>
+            <circle cx="300" cy="150" r="5" class="node" style="animation-delay:1s"/>
+            <circle cx="200" cy="220" r="5" class="node" style="animation-delay:1.5s"/>
+
+          </svg>
+          EOF
+
+      - name: Push SVG
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
