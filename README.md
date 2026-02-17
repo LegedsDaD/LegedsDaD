@@ -7,7 +7,11 @@
 
 
 ![Snake animation](https://github.com/LegedsDaD/LegedsDaD/blob/output/github-contribution-grid-snake.svg)
+# 🤖 AI DEFENSE HUD SYSTEM
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LegedsDaD/LegedsDaD/output/dist/ai-hud-system.svg" width="100%">
+</p>
 ### 🌐 Join Me on CoderLegion
 
 [![CoderLegion](https://coderlegion.com/cl_badge_logo1.png)](https://coderlegion.com/user/LegendsDaD) 
