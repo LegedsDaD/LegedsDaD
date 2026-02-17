@@ -1,6 +1,6 @@
 
 ![Snake animation](https://github.com/LegedsDaD/LegedsDaD/blob/output/github-contribution-grid-snake.svg)
-
+![Pacman](https://raw.githubusercontent.com/LegedsDaD/LegedsDaD/output/pacman-contribution-graph.svg)
 <p align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff00,100:000000&height=200&section=header&text=LegedsDaD&fontSize=40&fontColor=00ff00&animation=fadeIn" />
 </p>
