@@ -1,4 +1,4 @@
-name: AI HUD Robot System
+name: MAX MODE AI WAR
 
 on:
   schedule:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,86 +24,97 @@ jobs:
         run: mkdir -p dist
 
       ###################################################
-      # 🐍 Generate Contribution Snake
+      # Generate Contribution Snake
       ###################################################
 
-      - name: Generate Snake
+      - name: Generate snake
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: dist/snake.svg
 
       ###################################################
-      # 🤖🔥 Generate HUD Robot vs Snake
+      # Generate MAX MODE SVG
       ###################################################
 
-      - name: Generate AI HUD Animation
+      - name: Generate MAX MODE HUD
         run: |
-          cat <<'EOF' > dist/ai-hud-system.svg
+          cat <<'EOF' > dist/max-mode-ai-war.svg
+
           <svg xmlns="http://www.w3.org/2000/svg"
-               width="1000"
-               height="350"
-               viewBox="0 0 1000 350">
+               width="1100"
+               height="450"
+               viewBox="0 0 1100 450">
 
           <style>
 
-          /* Background HUD grid */
+          /* GRID */
           .grid line {
-            stroke:#00ffcc;
-            stroke-width:0.3;
-            opacity:0.2;
-            animation: gridMove 8s linear infinite;
+            stroke:#00ffee;
+            stroke-width:0.4;
+            opacity:0.15;
+            animation:gridMove 12s linear infinite;
           }
 
           @keyframes gridMove {
-            from { transform:translateY(0px); }
-            to { transform:translateY(20px); }
+            from { transform:translateY(0); }
+            to { transform:translateY(60px); }
           }
 
-          /* Robot movement */
+          /* ROBOT WALK */
           .robot {
-            animation: walk 8s infinite linear;
+            animation:robotWalk 12s infinite linear;
           }
 
-          @keyframes walk {
+          @keyframes robotWalk {
             0% { transform:translateX(0px); }
-            50% { transform:translateX(700px); }
+            50% { transform:translateX(850px); }
             100% { transform:translateX(0px); }
           }
 
-          /* Laser */
+          /* DRONES */
+          .drone {
+            animation:droneFly 8s infinite linear;
+          }
+
+          @keyframes droneFly {
+            0% { transform:translateX(0px) translateY(0px); }
+            50% { transform:translateX(1000px) translateY(30px); }
+            100% { transform:translateX(0px) translateY(0px); }
+          }
+
+          /* LASER */
           .laser {
-            stroke:#ff0033;
-            stroke-width:4;
-            stroke-dasharray:10;
-            animation:shoot 0.4s infinite linear;
+            stroke:#ff0044;
+            stroke-width:3;
+            stroke-dasharray:12;
+            animation:laser 0.4s infinite linear;
           }
 
-          @keyframes shoot {
-            from { stroke-dashoffset:20; opacity:1; }
-            to { stroke-dashoffset:0; opacity:0.3; }
+          @keyframes laser {
+            from { stroke-dashoffset:20; }
+            to { stroke-dashoffset:0; }
           }
 
-          /* Radar pulse */
+          /* RADAR */
           .radar circle {
             fill:none;
-            stroke:#00ffcc;
+            stroke:#00ffee;
             stroke-width:2;
-            opacity:0.5;
-            animation:pulse 2s infinite;
+            animation:radar 3s infinite;
           }
 
-          @keyframes pulse {
+          @keyframes radar {
             0% { r:10; opacity:1; }
-            100% { r:60; opacity:0; }
+            100% { r:100; opacity:0; }
           }
 
-          /* Targeting reticle */
+          /* TARGET ROTATE */
           .target {
-            stroke:#00ffcc;
+            stroke:#00ffee;
             stroke-width:2;
             fill:none;
-            animation:spin 4s linear infinite;
+            animation:spin 6s infinite linear;
             transform-origin:center;
           }
 
@@ -112,100 +123,122 @@ jobs:
             to { transform:rotate(360deg); }
           }
 
+          /* POWER BAR */
+          .power {
+            fill:#00ff88;
+            animation:powerUp 4s infinite alternate;
+          }
+
+          @keyframes powerUp {
+            from { width:100px; }
+            to { width:350px; }
+          }
+
+          /* BOSS HEALTH */
+          .health {
+            fill:#ff0033;
+            animation:healthDrain 6s infinite alternate;
+          }
+
+          @keyframes healthDrain {
+            from { width:350px; }
+            to { width:50px; }
+          }
+
+          /* KILL COUNTER */
+          .counter {
+            fill:#00ffee;
+            font-family:monospace;
+            font-size:18px;
+            animation:flicker 2s infinite;
+          }
+
+          @keyframes flicker {
+            0%,100% { opacity:1; }
+            50% { opacity:0.4; }
+          }
+
           </style>
 
 
-          <!-- HUD GRID -->
+          <!-- GRID -->
           <g class="grid">
-            <line x1="0" y1="50" x2="1000" y2="50"/>
-            <line x1="0" y1="100" x2="1000" y2="100"/>
-            <line x1="0" y1="150" x2="1000" y2="150"/>
-            <line x1="0" y1="200" x2="1000" y2="200"/>
-            <line x1="0" y1="250" x2="1000" y2="250"/>
+            <line x1="0" y1="80" x2="1100" y2="80"/>
+            <line x1="0" y1="140" x2="1100" y2="140"/>
+            <line x1="0" y1="200" x2="1100" y2="200"/>
+            <line x1="0" y1="260" x2="1100" y2="260"/>
+            <line x1="0" y1="320" x2="1100" y2="320"/>
           </g>
 
-          <!-- Contribution Snake -->
+
+          <!-- Snake -->
           <image href="snake.svg"
                  x="0"
-                 y="80"
-                 width="1000"
+                 y="120"
+                 width="1100"
                  height="200"/>
 
-          <!-- Robot -->
+
+          <!-- Robot Army -->
           <g class="robot">
-
-            <!-- head -->
-            <rect x="50" y="100"
-                  width="60"
-                  height="60"
-                  rx="10"
-                  fill="#00ffcc"/>
-
-            <!-- eye -->
-            <circle cx="95"
-                    cy="130"
-                    r="6"
-                    fill="red"/>
-
-            <!-- body -->
-            <rect x="65"
-                  y="160"
-                  width="30"
-                  height="70"
-                  fill="#00ffaa"/>
-
-            <!-- laser -->
-            <line x1="110"
-                  y1="130"
-                  x2="900"
-                  y2="130"
-                  class="laser"/>
-
+            <rect x="50" y="150" width="50" height="60" fill="#00ffee"/>
+            <circle cx="85" cy="180" r="6" fill="red"/>
+            <line x1="100" y1="180" x2="1050" y2="180" class="laser"/>
           </g>
 
+
+          <!-- Drones -->
+          <g class="drone">
+            <rect x="100" y="40" width="40" height="15" fill="#00ffee"/>
+            <circle cx="120" cy="60" r="4" fill="red"/>
+          </g>
+
+
           <!-- Explosion -->
-          <circle cx="900"
-                  cy="130"
-                  r="10"
-                  fill="#ff0033">
-
+          <circle cx="1050" cy="180" r="10" fill="red">
             <animate attributeName="r"
-                     values="5;20;5"
-                     dur="0.6s"
+                     values="5;30;5"
+                     dur="0.5s"
                      repeatCount="indefinite"/>
-
-            <animate attributeName="opacity"
-                     values="1;0.2;1"
-                     dur="0.6s"
-                     repeatCount="indefinite"/>
-
           </circle>
+
 
           <!-- Radar -->
           <g class="radar">
-            <circle cx="850" cy="50"/>
+            <circle cx="1000" cy="60"/>
           </g>
 
-          <!-- Targeting HUD -->
-          <circle cx="900"
-                  cy="130"
-                  r="40"
-                  class="target"/>
+
+          <!-- Target -->
+          <circle cx="1050" cy="180" r="60" class="target"/>
+
+
+          <!-- Power Level -->
+          <text x="20" y="30" fill="#00ffee">AI POWER</text>
+          <rect x="20" y="40" height="15" class="power"/>
+
+
+          <!-- Boss Health -->
+          <text x="20" y="90" fill="#ff0033">BOSS HP</text>
+          <rect x="20" y="100" height="15" class="health"/>
+
+
+          <!-- Kill Counter -->
+          <text x="20" y="420" class="counter">
+            KILLS: 999+
+          </text>
 
           </svg>
+
           EOF
 
-
-      ###################################################
-      # Commit and Push
-      ###################################################
 
       - name: Commit
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add dist/*.svg
-          git commit -m "Update AI HUD animation" || echo "No changes"
+          git commit -m "Activate MAX MODE AI WAR" || echo "No changes"
 
       - name: Push
         uses: ad-m/github-push-action@master
