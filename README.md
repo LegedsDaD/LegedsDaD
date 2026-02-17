@@ -1,6 +1,10 @@
 ## 🐍 Contribution Snake
 
-![Snake animation](https://github.com/LegedsDaD/LegedsDaD/blob/output/github-contribution-grid-snake.svg)## Hi there 👋
+![Snake animation](https://github.com/LegedsDaD/LegedsDaD/blob/output/github-contribution-grid-snake.svg)
+
+## Hi there 👋
+
+
 ### 🌐 Join Me on CoderLegion
 
 [![CoderLegion](https://coderlegion.com/cl_badge_logo1.png)](https://coderlegion.com/user/LegendsDaD) 
@@ -13,7 +17,7 @@
 
 ## 🤗Decorations
 [![Quickdraw](https://img.shields.io/badge/Achievement-Quickdraw-ffd700?style=for-the-badge&logo=github&labelColor=181717)](https://github.com/users/LegedsDaD/achievements/quickdraw)
-
+![Snake animation](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake.svg)
 [![YOLO](https://img.shields.io/badge/Achievement-YOLO-ffd700?style=for-the-badge&logo=github&labelColor=181717)](https://github.com/users/LegedsDaD/achievements/yolo)
 
 [![PullShark](https://img.shields.io/badge/Achievement-PullShark-ffd700?style=for-the-badge&logo=github&labelColor=1817
