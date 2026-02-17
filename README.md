@@ -1,4 +1,6 @@
-## Hi there 👋
+## 🐍 Contribution Snake
+
+![Snake animation](https://github.com/LegedsDaD/LegedsDaD/blob/output/github-contribution-grid-snake.svg)## Hi there 👋
 ### 🌐 Join Me on CoderLegion
 
 [![CoderLegion](https://coderlegion.com/cl_badge_logo1.png)](https://coderlegion.com/user/LegendsDaD) 
