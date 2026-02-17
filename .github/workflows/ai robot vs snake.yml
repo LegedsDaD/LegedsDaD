@@ -1,4 +1,4 @@
-name: AI Robot vs Snake
+name: AI HUD Robot System
 
 on:
   schedule:
@@ -10,12 +10,10 @@ permissions:
 
 jobs:
   generate:
-
     runs-on: ubuntu-latest
 
     steps:
 
-      # Checkout output branch safely
       - name: Checkout output branch
         uses: actions/checkout@v4
         with:
@@ -25,154 +23,191 @@ jobs:
       - name: Create dist folder
         run: mkdir -p dist
 
-      ############################################
-      # Generate Snake
-      ############################################
+      ###################################################
+      # 🐍 Generate Contribution Snake
+      ###################################################
 
-      - name: Generate snake svg
+      - name: Generate Snake
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: dist/snake.svg
 
-      ############################################
-      # Generate Robot vs Snake SVG
-      ############################################
+      ###################################################
+      # 🤖🔥 Generate HUD Robot vs Snake
+      ###################################################
 
-      - name: Generate AI Robot Hunter
+      - name: Generate AI HUD Animation
         run: |
-
-          cat <<'EOF' > dist/robot-vs-snake.svg
+          cat <<'EOF' > dist/ai-hud-system.svg
           <svg xmlns="http://www.w3.org/2000/svg"
-               width="900"
-               height="300"
-               viewBox="0 0 900 300">
+               width="1000"
+               height="350"
+               viewBox="0 0 1000 350">
 
           <style>
 
+          /* Background HUD grid */
+          .grid line {
+            stroke:#00ffcc;
+            stroke-width:0.3;
+            opacity:0.2;
+            animation: gridMove 8s linear infinite;
+          }
+
+          @keyframes gridMove {
+            from { transform:translateY(0px); }
+            to { transform:translateY(20px); }
+          }
+
+          /* Robot movement */
           .robot {
-            animation: walk 6s infinite linear;
-          }
-
-          .laser {
-            stroke: red;
-            stroke-width: 4;
-            stroke-dasharray: 12;
-            animation: shoot 0.4s infinite linear;
-          }
-
-          .eye {
-            animation: scan 1s infinite alternate;
+            animation: walk 8s infinite linear;
           }
 
           @keyframes walk {
-            0% { transform: translateX(0px); }
-            50% { transform: translateX(600px); }
-            100% { transform: translateX(0px); }
+            0% { transform:translateX(0px); }
+            50% { transform:translateX(700px); }
+            100% { transform:translateX(0px); }
+          }
+
+          /* Laser */
+          .laser {
+            stroke:#ff0033;
+            stroke-width:4;
+            stroke-dasharray:10;
+            animation:shoot 0.4s infinite linear;
           }
 
           @keyframes shoot {
-            from { stroke-dashoffset: 20; opacity:1; }
-            to { stroke-dashoffset: 0; opacity:0.3; }
+            from { stroke-dashoffset:20; opacity:1; }
+            to { stroke-dashoffset:0; opacity:0.3; }
           }
 
-          @keyframes scan {
-            from { fill: red; }
-            to { fill: yellow; }
+          /* Radar pulse */
+          .radar circle {
+            fill:none;
+            stroke:#00ffcc;
+            stroke-width:2;
+            opacity:0.5;
+            animation:pulse 2s infinite;
+          }
+
+          @keyframes pulse {
+            0% { r:10; opacity:1; }
+            100% { r:60; opacity:0; }
+          }
+
+          /* Targeting reticle */
+          .target {
+            stroke:#00ffcc;
+            stroke-width:2;
+            fill:none;
+            animation:spin 4s linear infinite;
+            transform-origin:center;
+          }
+
+          @keyframes spin {
+            from { transform:rotate(0deg); }
+            to { transform:rotate(360deg); }
           }
 
           </style>
 
 
+          <!-- HUD GRID -->
+          <g class="grid">
+            <line x1="0" y1="50" x2="1000" y2="50"/>
+            <line x1="0" y1="100" x2="1000" y2="100"/>
+            <line x1="0" y1="150" x2="1000" y2="150"/>
+            <line x1="0" y1="200" x2="1000" y2="200"/>
+            <line x1="0" y1="250" x2="1000" y2="250"/>
+          </g>
+
           <!-- Contribution Snake -->
           <image href="snake.svg"
                  x="0"
-                 y="50"
-                 width="900"
+                 y="80"
+                 width="1000"
                  height="200"/>
-
 
           <!-- Robot -->
           <g class="robot">
 
             <!-- head -->
-            <rect x="50" y="80" width="50" height="50"
+            <rect x="50" y="100"
+                  width="60"
+                  height="60"
                   rx="10"
-                  fill="cyan"/>
+                  fill="#00ffcc"/>
 
             <!-- eye -->
-            <circle cx="85" cy="105"
+            <circle cx="95"
+                    cy="130"
                     r="6"
-                    class="eye"/>
+                    fill="red"/>
 
             <!-- body -->
-            <rect x="60" y="130"
+            <rect x="65"
+                  y="160"
                   width="30"
-                  height="60"
-                  fill="cyan"/>
-
-            <!-- legs -->
-            <rect x="60"
-                  y="190"
-                  width="10"
-                  height="30"
-                  fill="cyan"/>
-
-            <rect x="80"
-                  y="190"
-                  width="10"
-                  height="30"
-                  fill="cyan"/>
+                  height="70"
+                  fill="#00ffaa"/>
 
             <!-- laser -->
-            <line x1="100"
-                  y1="110"
-                  x2="850"
-                  y2="110"
+            <line x1="110"
+                  y1="130"
+                  x2="900"
+                  y2="130"
                   class="laser"/>
 
           </g>
 
-
-          <!-- explosion -->
-          <circle cx="850"
-                  cy="110"
-                  r="8"
-                  fill="red">
+          <!-- Explosion -->
+          <circle cx="900"
+                  cy="130"
+                  r="10"
+                  fill="#ff0033">
 
             <animate attributeName="r"
-                     values="5;18;5"
-                     dur="0.5s"
+                     values="5;20;5"
+                     dur="0.6s"
                      repeatCount="indefinite"/>
 
             <animate attributeName="opacity"
                      values="1;0.2;1"
-                     dur="0.5s"
+                     dur="0.6s"
                      repeatCount="indefinite"/>
 
           </circle>
+
+          <!-- Radar -->
+          <g class="radar">
+            <circle cx="850" cy="50"/>
+          </g>
+
+          <!-- Targeting HUD -->
+          <circle cx="900"
+                  cy="130"
+                  r="40"
+                  class="target"/>
 
           </svg>
           EOF
 
 
-      ############################################
-      # Commit safely
-      ############################################
+      ###################################################
+      # Commit and Push
+      ###################################################
 
-      - name: Commit files
+      - name: Commit
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add dist/*.svg
-          git commit -m "Update AI robot vs snake animation" || echo "No changes"
+          git commit -m "Update AI HUD animation" || echo "No changes"
 
-
-      ############################################
-      # Push safely
-      ############################################
-
-      - name: Push branch
+      - name: Push
         uses: ad-m/github-push-action@master
         with:
           branch: output
