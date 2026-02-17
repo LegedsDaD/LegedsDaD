@@ -2,7 +2,7 @@
 </p>
 
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=3000&color=00FF00&center=true&vCenter=true&width=700&lines=Hello+World;AI+Developer;Python+Expert;Open+Source+Contributor" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=3000&color=00FF00&center=true&vCenter=true&width=700&lines=Hello+World;AI+Developer;Python+Expert;Open+Source+Contributor;CalCulus+Maker;Collaborator;Student;Everything+In+One" />
 </p>
 
 
