@@ -1,0 +1,52 @@
+name: Generate Animated Grid
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Create dist folder
+        run: mkdir -p dist
+
+      - name: Generate animated grid SVG
+        run: |
+          cat <<EOF > dist/grid-animation.svg
+          <svg xmlns="http://www.w3.org/2000/svg" width="800" height="200">
+            <style>
+              .box {
+                width: 20px;
+                height: 20px;
+                fill: #00ff00;
+                animation: pulse 2s infinite ease-in-out;
+              }
+              @keyframes pulse {
+                0% { opacity: 0.3; }
+                50% { opacity: 1; }
+                100% { opacity: 0.3; }
+              }
+            </style>
+
+            <!-- Grid -->
+            $(for i in {0..30}; do
+                for j in {0..5}; do
+                  echo "<rect x='$((i*25))' y='$((j*25))' width='20' height='20' class='box' />"
+                done
+              done)
+          </svg>
+          EOF
+
+      - name: Push SVG to output branch
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
