@@ -7,6 +7,7 @@
 
 
 ![Snake animation](https://github.com/LegedsDaD/LegedsDaD/blob/output/dist/snake.svg)
+![Legendary Snake](https://raw.githubusercontent.com/LegedsDaD/LegedsDaD/output/legendary-snake-cinematic.svg)
 # 🤖 AI DEFENSE HUD SYSTEM
 
 <p align="center">
