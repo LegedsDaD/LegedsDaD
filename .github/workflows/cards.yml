@@ -1,0 +1,129 @@
+name: Legendary Animated Cards
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  legendary:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout output branch
+        uses: actions/checkout@v4
+        with:
+          ref: output
+          path: output
+        continue-on-error: true
+
+      - name: Create output folder
+        run: mkdir -p output
+
+      - name: Fetch Legendary Stats
+        run: |
+          USER="LegedsDaD"
+
+          echo "Fetching followers..."
+          FOLLOWERS=$(curl -s https://api.github.com/users/$USER | jq .followers)
+
+          echo "Fetching repos..."
+          REPOS=$(curl -s https://api.github.com/users/$USER/repos?per_page=100)
+
+          echo "Calculating stars..."
+          STARS=$(echo "$REPOS" | jq '[.[].stargazers_count] | add')
+
+          echo "Calculating languages..."
+          LANG=$(echo "$REPOS" | jq -r '.[].language' | sort | uniq -c | sort -nr | head -1 | awk '{print $2}')
+
+          echo "Fetching visitor count..."
+          VISITORS=$(curl -s https://api.countapi.xyz/hit/legedsdad/profile | jq .value)
+
+          echo "FOLLOWERS=$FOLLOWERS" >> $GITHUB_ENV
+          echo "STARS=$STARS" >> $GITHUB_ENV
+          echo "LANG=$LANG" >> $GITHUB_ENV
+          echo "VISITORS=$VISITORS" >> $GITHUB_ENV
+
+      - name: Generate Legendary SVG
+        run: |
+          cat > output/cards.svg << EOF
+          <svg width="700" height="350" xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+            <linearGradient id="legendary" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#00ffff">
+                <animate attributeName="stop-color"
+                  values="#00ffff;#ff00ff;#00ffff"
+                  dur="5s"
+                  repeatCount="indefinite"/>
+              </stop>
+              <stop offset="100%" stop-color="#ff00ff"/>
+            </linearGradient>
+          </defs>
+
+          <style>
+          .title {
+            font: bold 32px monospace;
+            fill: url(#legendary);
+            animation: pulse 2s infinite;
+          }
+
+          .stat {
+            font: bold 22px monospace;
+            fill: white;
+            animation: fade 3s infinite alternate;
+          }
+
+          @keyframes pulse {
+            0% { opacity: 0.6; }
+            100% { opacity: 1; }
+          }
+
+          @keyframes fade {
+            from { opacity: 0.5; }
+            to { opacity: 1; }
+          }
+
+          </style>
+
+          <rect width="100%" height="100%" fill="#0a0a0a"/>
+
+          <text x="50" y="60" class="title">
+          ⚡ LEGEDSDAD LEGENDARY CORE ⚡
+          </text>
+
+          <text x="50" y="140" class="stat">
+          👁 Visitors: ${VISITORS}
+          </text>
+
+          <text x="50" y="190" class="stat">
+          ⭐ Total Stars: ${STARS}
+          </text>
+
+          <text x="50" y="240" class="stat">
+          👥 Followers: ${FOLLOWERS}
+          </text>
+
+          <text x="50" y="290" class="stat">
+          🧠 Top Language: ${LANG}
+          </text>
+
+          </svg>
+          EOF
+
+      - name: Push to output branch
+        run: |
+          cd output
+          git init
+          git config user.name "legendary-bot"
+          git config user.email "actions@github.com"
+          git add cards.svg
+          git commit -m "Legendary cards update" || exit 0
+          git branch -M output
+          git remote add origin https://github.com/LegedsDaD/LegedsDaD.git
+          git push origin output --force
