@@ -6,7 +6,7 @@
 </p>
 
 
-![Snake)[https://github.com/LegedsDaD/LegedsDaD/blob/output/github-contribution-grid-snake.svg]
+![Snake](https://github.com/LegedsDaD/LegedsDaD/blob/output/github-contribution-grid-snake.svg)
 
 ### 🌐 Join Me on CoderLegio
 
