@@ -7,7 +7,38 @@
 
 
 ![Snake](https://github.com/LegedsDaD/LegedsDaD/blob/output/github-contribution-grid-snake.svg)
+<p align="center">
 
+<!-- Neon Glow Container -->
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=28&duration=2000&pause=500&color=00FFFF&center=true&vCenter=true&width=600&lines=⚡+LEGENDARY+CORE+⚡;SYSTEM+ONLINE;POWER+LEVEL+MAXIMUM;CYBER+MODE+ACTIVE" />
+
+<br><br>
+
+<!-- Animated Neon Shields Row -->
+
+<img src="https://img.shields.io/badge/STATUS-LEGENDARY-ff00ff?style=for-the-badge&logo=power&logoColor=00ffff&labelColor=000000"/>
+
+<img src="https://img.shields.io/badge/CORE-NEURAL%20AI-00ffff?style=for-the-badge&logo=openai&logoColor=ff00ff&labelColor=000000"/>
+
+<img src="https://img.shields.io/badge/MODE-CYBERPUNK-39ff14?style=for-the-badge&logo=matrix&logoColor=ff00ff&labelColor=000000"/>
+
+<img src="https://img.shields.io/badge/POWER-INFINITE-ff0000?style=for-the-badge&logo=tesla&logoColor=00ffff&labelColor=000000"/>
+
+<img src="https://img.shields.io/badge/REALITY-HACKED-00ffff?style=for-the-badge&logo=hackaday&logoColor=ff00ff&labelColor=000000"/>
+
+<img src="https://img.shields.io/badge/ACCESS-GRANTED-39ff14?style=for-the-badge&logo=protonvpn&logoColor=ff00ff&labelColor=000000"/>
+
+</p>
+
+---
+
+<!-- Neon Divider Line -->
+
+<p align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff00ff,50:00ffff,100:39ff14&height=120&section=header"/>
+
+</p>
 ### 🌐 Join Me on CoderLegio
 
 [![CoderLegion](https://coderlegion.com/cl_badge_logo1.png)](https://coderlegion.com/user/LegendsDaD) 
