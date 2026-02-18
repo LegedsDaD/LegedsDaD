@@ -1,0 +1,151 @@
+name: Cinematic Snake Battle
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout output branch
+        uses: actions/checkout@v4
+        with:
+          ref: output
+        continue-on-error: true
+
+      - name: Create dist folder
+        run: mkdir -p dist
+
+      ##################################################
+      # Generate Real Contribution Snake
+      ##################################################
+
+      - name: Generate snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: dist/snake.svg
+
+      ##################################################
+      # Generate Cinematic Battle Overlay
+      ##################################################
+
+      - name: Generate Battle Animation
+        run: |
+          cat <<'EOF' > dist/cinematic-battle.svg
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="1100"
+               height="400"
+               viewBox="0 0 1100 400">
+
+          <style>
+
+          .bullet {
+            fill: yellow;
+            opacity: 0;
+            animation: bulletMove 16s infinite;
+          }
+
+          @keyframes bulletMove {
+            0%,25% { opacity:0; transform:translateX(0); }
+            30% { opacity:1; }
+            40% { transform:translateX(800px); opacity:1; }
+            45% { opacity:0; }
+            100% { opacity:0; }
+          }
+
+          .explosion {
+            fill: orange;
+            opacity: 0;
+            animation: explode 16s infinite;
+          }
+
+          @keyframes explode {
+            0%,35% { opacity:0; r:10; }
+            40% { opacity:1; r:80; }
+            45% { opacity:0; r:120; }
+            100% { opacity:0; }
+          }
+
+          .boss {
+            fill: red;
+            opacity: 0;
+            animation: bossAppear 16s infinite;
+          }
+
+          @keyframes bossAppear {
+            0%,45% { opacity:0; transform:scale(0.5); }
+            50% { opacity:1; transform:scale(1); }
+            70% { opacity:1; }
+            80% { opacity:0; }
+            100% { opacity:0; }
+          }
+
+          .tank {
+            fill: #00ffcc;
+            opacity: 0;
+            animation: tankEnter 16s infinite;
+          }
+
+          @keyframes tankEnter {
+            0%,65% { opacity:0; transform:translateX(-200px); }
+            70% { opacity:1; transform:translateX(100px); }
+            85% { opacity:1; transform:translateX(300px); }
+            95% { opacity:0; }
+            100% { opacity:0; }
+          }
+
+          </style>
+
+
+          <!-- Real Snake -->
+          <image href="snake.svg"
+                 x="0"
+                 y="120"
+                 width="1100"
+                 height="200"/>
+
+
+          <!-- Bullets from left -->
+          <circle class="bullet" cx="50" cy="200" r="6"/>
+
+          <!-- Explosion -->
+          <circle class="explosion" cx="800" cy="200" r="10"/>
+
+          <!-- Boss Snake -->
+          <rect class="boss"
+                x="600"
+                y="150"
+                width="200"
+                height="100"
+                rx="50"/>
+
+          <!-- Tank -->
+          <g class="tank">
+            <rect x="0" y="250" width="120" height="40"/>
+            <rect x="100" y="230" width="80" height="20"/>
+          </g>
+
+          </svg>
+          EOF
+
+
+      - name: Commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add dist/*.svg
+          git commit -m "Update Cinematic Snake Battle" || echo "No changes"
+
+      - name: Push
+        uses: ad-m/github-push-action@master
+        with:
+          branch: output
+          github_token: ${{ secrets.GITHUB_TOKEN }}
