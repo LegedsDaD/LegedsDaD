@@ -1,4 +1,4 @@
-name: Cinematic Snake Battle
+name: Real Cinematic Snake Battle
 
 on:
   schedule:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  cinematic:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +24,7 @@ jobs:
         run: mkdir -p dist
 
       ##################################################
-      # Generate Real Contribution Snake
+      # Generate real contribution snake
       ##################################################
 
       - name: Generate snake
@@ -34,115 +34,220 @@ jobs:
           outputs: dist/snake.svg
 
       ##################################################
-      # Generate Cinematic Battle Overlay
+      # Generate REAL CINEMATIC SVG
       ##################################################
 
-      - name: Generate Battle Animation
+      - name: Generate cinematic svg
         run: |
-          cat <<'EOF' > dist/cinematic-battle.svg
+          cat <<'EOF' > dist/real-cinematic-mode.svg
+
           <svg xmlns="http://www.w3.org/2000/svg"
                width="1100"
-               height="400"
-               viewBox="0 0 1100 400">
+               height="420"
+               viewBox="0 0 1100 420">
 
           <style>
 
+          /* cinematic bars */
+          .bar {
+            fill:black;
+          }
+
+          /* screen shake */
+          .screen {
+            animation: shake 12s infinite;
+          }
+
+          @keyframes shake {
+            0%,48%,100% { transform:translate(0,0); }
+            50% { transform:translate(-4px,2px); }
+            52% { transform:translate(4px,-2px); }
+            54% { transform:translate(-3px,1px); }
+            56% { transform:translate(0,0); }
+          }
+
+          /* bullets */
           .bullet {
-            fill: yellow;
-            opacity: 0;
-            animation: bulletMove 16s infinite;
+            fill:#ffff00;
+            opacity:0;
+            animation: bullet 12s infinite linear;
           }
 
-          @keyframes bulletMove {
-            0%,25% { opacity:0; transform:translateX(0); }
-            30% { opacity:1; }
-            40% { transform:translateX(800px); opacity:1; }
-            45% { opacity:0; }
-            100% { opacity:0; }
+          @keyframes bullet {
+            0%,40% { opacity:0; }
+            45% { opacity:1; }
+            55% { transform:translateX(900px); opacity:1; }
+            60% { opacity:0; }
           }
 
-          .explosion {
-            fill: orange;
-            opacity: 0;
-            animation: explode 16s infinite;
+          /* explosion flash */
+          .flash {
+            fill:white;
+            opacity:0;
+            animation: flash 12s infinite;
           }
 
-          @keyframes explode {
-            0%,35% { opacity:0; r:10; }
-            40% { opacity:1; r:80; }
-            45% { opacity:0; r:120; }
-            100% { opacity:0; }
+          @keyframes flash {
+            0%,48% { opacity:0; }
+            50% { opacity:1; }
+            52% { opacity:0; }
           }
 
+          /* explosion shockwave */
+          .shockwave {
+            stroke:#ff6600;
+            stroke-width:4;
+            fill:none;
+            opacity:0;
+            animation: shockwave 12s infinite;
+          }
+
+          @keyframes shockwave {
+            0%,50% { r:10; opacity:0; }
+            52% { opacity:1; }
+            60% { r:200; opacity:0; }
+          }
+
+          /* boss snake */
           .boss {
-            fill: red;
-            opacity: 0;
-            animation: bossAppear 16s infinite;
+            fill:#ff0033;
+            opacity:0;
+            animation: boss 12s infinite;
           }
 
-          @keyframes bossAppear {
-            0%,45% { opacity:0; transform:scale(0.5); }
-            50% { opacity:1; transform:scale(1); }
-            70% { opacity:1; }
-            80% { opacity:0; }
-            100% { opacity:0; }
+          @keyframes boss {
+            0%,55% { opacity:0; transform:scale(0.3); }
+            60% { opacity:1; transform:scale(1); }
+            85% { opacity:1; }
+            90% { opacity:0; }
           }
 
+          /* tank */
           .tank {
-            fill: #00ffcc;
-            opacity: 0;
-            animation: tankEnter 16s infinite;
+            fill:#00ffaa;
+            opacity:0;
+            animation: tank 12s infinite;
           }
 
-          @keyframes tankEnter {
-            0%,65% { opacity:0; transform:translateX(-200px); }
-            70% { opacity:1; transform:translateX(100px); }
-            85% { opacity:1; transform:translateX(300px); }
-            95% { opacity:0; }
+          @keyframes tank {
+            0%,70% { opacity:0; transform:translateX(-300px); }
+            75% { opacity:1; transform:translateX(200px); }
+            90% { transform:translateX(400px); }
             100% { opacity:0; }
+          }
+
+          /* tank recoil */
+          .recoil {
+            animation: recoil 12s infinite;
+          }
+
+          @keyframes recoil {
+            80% { transform:translateX(-10px); }
+            82% { transform:translateX(0px); }
+          }
+
+          /* muzzle flash */
+          .muzzle {
+            fill:orange;
+            opacity:0;
+            animation:muzzle 12s infinite;
+          }
+
+          @keyframes muzzle {
+            80% { opacity:1; }
+            82% { opacity:0; }
+          }
+
+          /* scanlines */
+          .scan line {
+            stroke:black;
+            stroke-width:1;
+            opacity:0.1;
           }
 
           </style>
 
 
-          <!-- Real Snake -->
+          <!-- cinematic bars -->
+          <rect class="bar" x="0" y="0" width="1100" height="40"/>
+          <rect class="bar" x="0" y="380" width="1100" height="40"/>
+
+
+          <g class="screen">
+
+          <!-- real snake -->
           <image href="snake.svg"
                  x="0"
-                 y="120"
+                 y="80"
                  width="1100"
-                 height="200"/>
+                 height="240"/>
 
 
-          <!-- Bullets from left -->
+          <!-- bullets -->
           <circle class="bullet" cx="50" cy="200" r="6"/>
+          <circle class="bullet" cx="100" cy="220" r="6"/>
+          <circle class="bullet" cx="150" cy="180" r="6"/>
 
-          <!-- Explosion -->
-          <circle class="explosion" cx="800" cy="200" r="10"/>
 
-          <!-- Boss Snake -->
+          <!-- explosion flash -->
+          <rect class="flash"
+                x="0"
+                y="0"
+                width="1100"
+                height="420"/>
+
+
+          <!-- shockwave -->
+          <circle class="shockwave"
+                  cx="700"
+                  cy="200"
+                  r="10"/>
+
+
+          <!-- boss snake -->
           <rect class="boss"
                 x="600"
                 y="150"
-                width="200"
-                height="100"
-                rx="50"/>
+                width="300"
+                height="120"
+                rx="60"/>
 
-          <!-- Tank -->
-          <g class="tank">
-            <rect x="0" y="250" width="120" height="40"/>
-            <rect x="100" y="230" width="80" height="20"/>
+
+          <!-- tank -->
+          <g class="tank recoil">
+
+            <rect x="0" y="260" width="140" height="50"/>
+
+            <rect x="120"
+                  y="240"
+                  width="120"
+                  height="20"/>
+
+            <!-- muzzle flash -->
+            <circle class="muzzle"
+                    cx="240"
+                    cy="250"
+                    r="20"/>
+
+          </g>
+
           </g>
 
           </svg>
+
           EOF
 
+
+      ##################################################
+      # Commit and push
+      ##################################################
 
       - name: Commit
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add dist/*.svg
-          git commit -m "Update Cinematic Snake Battle" || echo "No changes"
+          git commit -m "Update real cinematic battle" || echo "No changes"
 
       - name: Push
         uses: ad-m/github-push-action@master
