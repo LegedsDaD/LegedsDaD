@@ -1,0 +1,183 @@
+name: Legendary Contribution Cinematic System
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Create dist folder
+        run: mkdir -p dist
+
+      - name: Generate LEGENDARY cinematic SVG
+        run: |
+          cat <<'EOF' > dist/legendary-snake-cinematic.svg
+          <svg width="900" height="240" viewBox="0 0 900 240"
+               xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+
+          <!-- Glow -->
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+            <feMerge>
+              <feMergeNode in="coloredBlur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+
+          <!-- Explosion -->
+          <radialGradient id="explosion">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="40%" stop-color="#ffaa00"/>
+            <stop offset="100%" stop-color="#ff0000"/>
+          </radialGradient>
+
+          </defs>
+
+          <!-- Background HUD -->
+          <rect width="100%" height="100%" fill="#000814"/>
+
+          <!-- Snake -->
+          <rect id="snake"
+                x="50" y="120"
+                width="120" height="18"
+                fill="#00ff88"
+                filter="url(#glow)">
+
+            <!-- Move snake -->
+            <animate attributeName="x"
+                     values="50;700;50"
+                     dur="6s"
+                     repeatCount="indefinite"/>
+
+            <!-- Boss transform -->
+            <animate attributeName="width"
+                     values="120;120;300;300;120"
+                     dur="12s"
+                     repeatCount="indefinite"/>
+
+            <animate attributeName="height"
+                     values="18;18;60;60;18"
+                     dur="12s"
+                     repeatCount="indefinite"/>
+
+          </rect>
+
+          <!-- Bullets -->
+          <circle cx="0" cy="50" r="4" fill="red">
+            <animate attributeName="cx"
+                     values="0;450"
+                     dur="3s"
+                     begin="3s"
+                     repeatCount="indefinite"/>
+          </circle>
+
+          <circle cx="900" cy="190" r="4" fill="red">
+            <animate attributeName="cx"
+                     values="900;450"
+                     dur="3s"
+                     begin="4s"
+                     repeatCount="indefinite"/>
+          </circle>
+
+          <!-- Explosion -->
+          <circle cx="450" cy="130"
+                  r="0"
+                  fill="url(#explosion)"
+                  opacity="0">
+
+            <animate attributeName="r"
+                     values="0;80;0"
+                     dur="2s"
+                     begin="5s"
+                     repeatCount="indefinite"/>
+
+            <animate attributeName="opacity"
+                     values="0;1;0"
+                     dur="2s"
+                     begin="5s"
+                     repeatCount="indefinite"/>
+
+          </circle>
+
+          <!-- Tank body -->
+          <rect id="tank"
+                x="-200"
+                y="160"
+                width="140"
+                height="50"
+                rx="8"
+                fill="#00c8ff"
+                filter="url(#glow)">
+
+            <animate attributeName="x"
+                     values="-200;380;380;-200"
+                     dur="12s"
+                     repeatCount="indefinite"/>
+
+          </rect>
+
+          <!-- Tank turret -->
+          <rect x="380"
+                y="150"
+                width="70"
+                height="12"
+                fill="#00c8ff"
+                filter="url(#glow)">
+
+            <animate attributeName="x"
+                     values="-200;380;380;-200"
+                     dur="12s"
+                     repeatCount="indefinite"/>
+
+          </rect>
+
+          <!-- Laser -->
+          <line x1="450"
+                y1="156"
+                x2="450"
+                y2="120"
+                stroke="#ff0000"
+                stroke-width="4"
+                opacity="0">
+
+            <animate attributeName="opacity"
+                     values="0;1;0"
+                     dur="1s"
+                     begin="7s"
+                     repeatCount="indefinite"/>
+
+          </line>
+
+          <!-- Title -->
+          <text x="50%"
+                y="40"
+                fill="#00ff88"
+                font-size="20"
+                text-anchor="middle"
+                filter="url(#glow)">
+            LEGENDARY CONTRIBUTION BOSS BATTLE SYSTEM
+          </text>
+
+          </svg>
+          EOF
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
