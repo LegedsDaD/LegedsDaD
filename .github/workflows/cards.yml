@@ -3,7 +3,7 @@ name: Animated GitHub Stats Cards
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"
+    - cron: 
 
 permissions:
   contents: write
