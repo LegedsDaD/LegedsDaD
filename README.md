@@ -9,8 +9,6 @@
 ![Snake](https://github.com/LegedsDaD/LegedsDaD/blob/output/github-contribution-grid-snake.svg)
 <p align="center">
 
-<!-- Neon Glow Container -->
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=28&duration=2000&pause=500&color=00FFFF&center=true&vCenter=true&width=600&lines=⚡+LEGENDARY+CORE+⚡;SYSTEM+ONLINE;POWER+LEVEL+MAXIMUM;CYBER+MODE+ACTIVE" />
 
 <br><br>
 
