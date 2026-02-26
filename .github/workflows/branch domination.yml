@@ -1,0 +1,52 @@
+name: Branch Domination Mode
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  dominate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate timestamp branch
+        id: branch
+        run: |
+          NAME="output-$(date +%Y%m%d-%H%M%S)"
+          echo "branch_name=$NAME" >> $GITHUB_OUTPUT
+
+      - name: Generate Output
+        run: |
+          mkdir dist
+          echo "Branch: ${{ steps.branch.outputs.branch_name }}" > dist/output.txt
+          echo "Generated at: $(date -u)" >> dist/output.txt
+
+      - name: Deploy to new branch
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: ${{ steps.branch.outputs.branch_name }}
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Cleanup old branches (keep last 10)
+        run: |
+          git fetch --all
+          BRANCHES=$(git branch -r | grep 'origin/output-' | sed 's/origin\///' | sort -r)
+          COUNT=0
+          for branch in $BRANCHES; do
+            COUNT=$((COUNT+1))
+            if [ $COUNT -gt 10 ]; then
+              git push origin --delete $branch
+            fi
+          done
+
+      - name: Optional Auto Merge to main
+        run: |
+          git fetch origin
+          git checkout main
+          git merge ${{ steps.branch.outputs.branch_name }} || true
+          git push origin main
