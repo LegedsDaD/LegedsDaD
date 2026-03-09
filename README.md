@@ -15,8 +15,7 @@
 [![GitHub Streak](https://streak-stats.demolab.com?user=LegedsDaD)](https://git.io/streak-stats)
 <br><br>
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=legedsdad&bg_color=ffcfe9&color=9e4c98&line=9e4c98&point=403d3d&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-
+![Rainbow Snake](https://github.com/LegedsDaD/LegedsDaD/blob/output/github-snake-rainbow.svg)
 <!-- Animated Neon Shields Row -->
 
 ![](https://komarev.com/ghpvc/?username=LegedsDaD)
