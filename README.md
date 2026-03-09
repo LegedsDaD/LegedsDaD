@@ -5,8 +5,11 @@
 <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=3000&color=00FF00&center=true&vCenter=true&width=700&lines=Hello+World;AI+Developer;Python+Expert;Open+Source+Contributor;CalCulus+Maker;ThreeDimensions+Maker;Collaborator;Student;Everything+In+One" />
 </p>
 
+<p align="center">
+  
 
-![Snake](https://github.com/LegedsDaD/LegedsDaD/blob/output/github-contribution-grid-snake.svg)
+
+  ![Snake](https://github.com/LegedsDaD/LegedsDaD/blob/output/github-contribution-grid-snake.svg)
 <p align="center">
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=LegedsDaD)](https://git.io/streak-stats)
@@ -15,6 +18,8 @@
 
 
 <!-- Animated Neon Shields Row -->
+
+![](https://komarev.com/ghpvc/?username=LegedsDaD)
 
 <img src="https://img.shields.io/badge/STATUS-LEGENDARY-ff00ff?style=for-the-badge&logo=power&logoColor=00ffff&labelColor=000000"/>
 
