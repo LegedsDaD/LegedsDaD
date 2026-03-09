@@ -9,7 +9,7 @@
   
 
 
-  ![Snake](https://github.com/LegedsDaD/LegedsDaD/blob/output/github-snake.svg)
+![Snake](https://github.com/LegedsDaD/LegedsDaD/blob/output/github-contribution-grid-snake.svg)
 <p align="center">
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=LegedsDaD)](https://git.io/streak-stats)
