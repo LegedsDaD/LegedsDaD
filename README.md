@@ -2,7 +2,7 @@
 </p>
 
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=3000&color=00FF00&center=true&vCenter=true&width=700&lines=Hello+World;AI+Developer;Python+Expert;Open+Source+Contributor;CalCulus+Maker;Collaborator;Student;Everything+In+One" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=3000&color=00FF00&center=true&vCenter=true&width=700&lines=Hello+World;AI+Developer;Python+Expert;Open+Source+Contributor;CalCulus+Maker;ThreeDimensions+Maker;Collaborator;Student;Everything+In+One" />
 </p>
 
 
@@ -69,7 +69,7 @@
 ---
 
 ## 🤔 I’m looking for help with
-NOTHING
+Better C++ bindings for Python libraries.
 
 ##  💬 Ask me about
 1) Python
@@ -85,7 +85,7 @@ Mail me on legendsdad001@gmail.com
 HE / HIM
 
 ## ⚡ Fun fact:
-1) I Believe I God but not in you.
+1) I Believe in almighty but not in you.
 2) I have strong brain but not better than your.
-3) Bad code I better than a person
+3) Bad code is better than a person
 -->
