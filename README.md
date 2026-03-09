@@ -21,6 +21,7 @@
 
 ![](https://komarev.com/ghpvc/?username=LegedsDaD)
 
+
 <img src="https://img.shields.io/badge/STATUS-LEGENDARY-ff00ff?style=for-the-badge&logo=power&logoColor=00ffff&labelColor=000000"/>
 
 <img src="https://img.shields.io/badge/CORE-NEURAL%20AI-00ffff?style=for-the-badge&logo=openai&logoColor=ff00ff&labelColor=000000"/>
