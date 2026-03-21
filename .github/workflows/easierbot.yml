@@ -11,7 +11,7 @@ on:
 
 jobs:
   run-bot:
-    uses: YOUR_USERNAME/EasierBot/.github/workflows/bot-engine.yml@main
+    uses: LegedsDaD/EasierBot/.github/workflows/bot-engine.yml@main
     
     secrets:
       APP_ID: ""
