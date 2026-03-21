@@ -1,0 +1,25 @@
+name: EasierBot Assistant
+
+on:
+  # Run every 15 minutes to check for members/cleanup
+  schedule:
+    - cron: '*/15 * * * *'
+  
+  # Run on Issues and PRs
+  issues:
+    types: [opened, edited]
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+  # Manual Trigger
+  workflow_dispatch:
+
+jobs:
+  run-bot:
+    # This calls the central engine from your repository
+    uses: YOUR_USERNAME/EasierBot/.github/workflows/bot-engine.yml@main
+    
+    # Pass the required secrets (The App Credentials)
+    secrets:
+      APP_ID: ${{ secrets.APP_ID }}
+      APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
