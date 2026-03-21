@@ -17,7 +17,7 @@ on:
 jobs:
   run-bot:
     # This calls the central engine from your repository
-    uses: YOUR_USERNAME/EasierBot/.github/workflows/bot-engine.yml@main
+    uses: LegedsDaD/EasierBot/.github/workflows/bot-engine.yml@main
     
     # Pass the required secrets (The App Credentials)
     secrets:
