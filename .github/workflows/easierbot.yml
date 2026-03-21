@@ -11,8 +11,4 @@ on:
 
 jobs:
   run-bot:
-    # This calls your reusable workflow
     uses: LegedsDaD/EasierBot/.github/workflows/bot-engine.yml@main
-    
-    # This tells GitHub to allow the reusable workflow to use secrets defined in YOUR repo
-    secrets: inherit
