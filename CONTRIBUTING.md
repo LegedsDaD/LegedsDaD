@@ -1,0 +1,3 @@
+# Contributing
+
+Please be nice.
