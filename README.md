@@ -44,11 +44,11 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff00ff,50:00ffff,100:39ff14&height=120&section=header"/>
 
 </p>
-### 🌐 Join Me on CoderLegio
+
+### 🌐 Join Me on CoderLegion
 
 [![CoderLegion](https://coderlegion.com/cl_badge_logo1.png)](https://coderlegion.com/user/LegendsDaD) 
 ## Social Profiles
-[Reddit](https://www.reddit.com/user/ElectionBeginning322/)
 
 [CoderLegion](https://coderlegion.com/user/LegendsDaD)
 
