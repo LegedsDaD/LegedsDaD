@@ -1,13 +1,3 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff00,100:000000&height=200&section=header&text=LegedsDaD&fontSize=40&fontColor=00ff00&animation=fadeIn" />
-</p>
-
-<p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=3000&color=00FF00&center=true&vCenter=true&width=700&lines=Hello+World;AI+Developer;Python+Expert;Open+Source+Contributor;CalCulus+Maker;ThreeDimensions+Maker;Collaborator;Student;Everything+In+One" />
-</p>
-
-<p align="center">
-  
-
 
 ![Snake](https://github.com/LegedsDaD/LegedsDaD/blob/output/github-contribution-grid-snake.svg)
 <p align="center">
@@ -72,7 +62,40 @@
 4) Making HTML with Javascript integration
 
 ---
+## 👨‍💻 &nbsp;About Me
 
+<img align="right" width="310" src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" alt="Developer GIF"/>
+
+&nbsp;🔥 &nbsp;Passionate **Full Stack Python Developer**  
+&nbsp;🎨 &nbsp;Creative **Ideas** 
+&nbsp;💡 &nbsp;Love building modern **Local AI Agents**  
+&nbsp;⚡ &nbsp;Focused on **performance, clean code, perfection & responsive design**  
+&nbsp;🚀 &nbsp;Always learning **new technologies & improving skills**
+
+<br clear="both"/>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
+
+<br/>
+
+## 📊 &nbsp;GitHub Stats
+
+<div align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=LegedsDaD&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=1e90ff&icon_color=1e90ff&text_color=ffffff&count_private=true"/>
+&nbsp;&nbsp;
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LegedsDaD&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=1e90ff&text_color=ffffff&langs_count=8"/>
+
+<br/><br/>
+
+<img width="68%" src="https://github-readme-streak-stats.herokuapp.com/?user=LegedsDaD&theme=tokyonight&hide_border=true&background=0d1117&stroke=1e90ff&ring=1e90ff&fire=ff6b35&currStreakLabel=1e90ff&sideLabels=aaaaaa&dates=aaaaaa"/>
+
+</div>
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
+<br/>
 ## 🤔 I’m looking for help with
 Better C++ bindings for Python libraries.
 
