@@ -58,6 +58,29 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
+## 🚀 Featured Projects
+
+<img align="right" width="300" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjNuZ3RvNzdvazN6ODRha3Q5ZmZodTM2cWE5Z3E0OGhvbzJ5ZjNxcyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/i3q36zEFShC18oS6v0/giphy.gif"/>
+
+### 🎮 [Simple Game Engine](https://github.com/LegedsDaD/Simple-The_Game_Engine)
+➡️ Lightweight Python-based game engine for rapid development  
+
+### 🤖 [Easier Bot](https://github.com/LegedsDaD/EasierBot)
+➡️ Automation bot to simplify repetitive tasks  
+
+### 📐 [Calculus](https://github.com/LegedsDaD/CalCulus)
+➡️ Mathematical tools & problem solving  
+
+### 🌌 [Three Dimensions](https://github.com/LegedsDaD/ThreeDimensions)
+➡️ 3D visualization & experimental rendering  
+
+### 🎨 [True Graphics](https://github.com/LegedsDaD/TrueGraphics)
+➡️ Graphics rendering for Windows  
+
+<br clear="both"/>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
+
 ## 🧠 Currently Building
 
 <img align="right" width="300" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmRkbW5wZWZhZThibDF5anp1cHh6cW1saG14NmNteTBxdjh4NTlyYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qgQUggAC3Pfv687qPC/giphy.gif"/>
