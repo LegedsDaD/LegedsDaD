@@ -34,7 +34,6 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 
-
 ## 🏆 GitHub Trophies
 
 <p align="center">
@@ -59,7 +58,19 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-<br/>
+## 🧠 Currently Building
+
+<img align="right" width="300" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmRkbW5wZWZhZThibDF5anp1cHh6cW1saG14NmNteTBxdjh4NTlyYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qgQUggAC3Pfv687qPC/giphy.gif"/>
+
+&nbsp;🤖 &nbsp;Building **AgentDesk** – Local AI Workspace for Developers  
+&nbsp;⚡ &nbsp;Creating **high-performance Python tools**  
+&nbsp;🧪 &nbsp;Experimenting with **LLM automation & AI agents**  
+&nbsp;🛠️ &nbsp;Improving **developer-friendly GUIs & workflows**  
+&nbsp;🚀 &nbsp;Exploring **real-world AI integrations**
+
+<br clear="both"/>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 ## 📊 &nbsp;GitHub Stats
 
