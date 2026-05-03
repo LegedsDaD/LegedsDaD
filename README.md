@@ -1,5 +1,9 @@
 <div align="center">
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4ca915e1-f335-4c55-a5ef-b984c3a1f239" height="500"/>
+</p>
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,30:0a3d62,70:1e90ff,100:00d4ff&height=220&section=header&text=Hi%20There!%20👋%20I'm%20LegedsDaD&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20Python%20%7C%20AI%20Builder&descAlignY=60&descSize=17&descColor=a8d8f0" width="100%"/>
 
 <br/>
