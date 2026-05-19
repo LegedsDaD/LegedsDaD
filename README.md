@@ -101,12 +101,6 @@
 
 ## 📊 &nbsp;GitHub Stats
 
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=LegedsDaD&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=1e90ff&icon_color=1e90ff&text_color=ffffff&count_private=true"/>
-&nbsp;&nbsp;
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LegedsDaD&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=1e90ff&text_color=ffffff&langs_count=8"/>
-
 <br/><br/>
 
 <img width="68%" src="https://github-readme-streak-stats.herokuapp.com/?user=LegedsDaD&theme=tokyonight&hide_border=true&background=0d1117&stroke=1e90ff&ring=1e90ff&fire=ff6b35&currStreakLabel=1e90ff&sideLabels=aaaaaa&dates=aaaaaa"/>
