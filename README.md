@@ -19,12 +19,6 @@
 <a href="my-badges/midnight-commits.md"><img src="https://my-badges.github.io/my-badges/midnight-commits.png" alt="I commit at midnight." title="I commit at midnight." width="64"></a>
 <!-- my-badges end -->
 
-<div align="center">
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/4ca915e1-f335-4c55-a5ef-b984c3a1f239" height="500"/>
-</p>
-
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,25:0a3d62,55:1e90ff,100:00d4ff&height=240&section=header&text=Hi%20There!%20👋%20I'm%20LegedsDaD&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20•%20AI%20Builder%20•%20Python%20Developer&descAlignY=60&descSize=18&descColor=c9eaff"/>
 
 <br/>
@@ -149,8 +143,7 @@ Goals:
 
 <div align="center">
 
-<img width="320" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmRkbW5wZWZhZThibDF5anp1cHh6cW1saG14NmNteTBxdjh4NTlyYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qgQUggAC3Pfv687qPC/giphy.gif"/>
-
+  <img src="https://github.com/user-attachments/assets/4ca915e1-f335-4c55-a5ef-b984c3a1f239" height="250"/>
 </div>
 
 - 🤖 Building **AgentDesk** – Local AI Workspace for Developers  
