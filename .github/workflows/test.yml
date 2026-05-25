@@ -16,7 +16,7 @@ jobs:
       - name: Generate dashboard
         uses: LegedsDaD/GitBoard@main
         with:
-          username: ${{ github.repository_owner }}
+          username: LegedsDaD
           template: Quantum Forge
           theme: dark
           output: assets/my_dashboard.svg
