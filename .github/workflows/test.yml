@@ -1,5 +1,4 @@
-name: Generate GitBoard Dashboard
-
+name: GitBoard
 on:
   workflow_dispatch:
   schedule:
@@ -13,22 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Generate dashboard (GitBoard action)
-        uses: ./
+
+      - name: Generate dashboard
+        uses: LegedsDaD/GitBoard@main
         with:
           username: ${{ github.repository_owner }}
           template: Quantum Forge
           theme: dark
           output: assets/my_dashboard.svg
           readme: README.md
-      - name: Commit changes
-        run: |
-          if git diff --quiet; then
-            echo "No changes."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/my_dashboard.svg README.md
-          git commit -m "Update GitBoard dashboard"
-          git push
+          prefer_txt: "true"
