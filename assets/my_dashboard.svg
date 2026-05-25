@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" style="background-color: #060913; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;">
+    <defs>
+        <filter id="hud-glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="6" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        <filter id="subtle-glow" x="-10%" y="-10%" width="120%" height="120%">
+            <feGaussianBlur stdDeviation="2" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        <pattern id="bg-grid-pattern" width="25" height="25" patternUnits="userSpaceOnUse">
+            <path d="M 25 0 L 0 0 0 25" fill="none" stroke="rgba(16, 255, 0, 0.03)" stroke-width="1"/>
+        </pattern>
+        
+        <style>
+            @keyframes cw-rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+            @keyframes ccw-rotate { 0% { transform: rotate(360deg); } 100% { transform: rotate(0deg); } }
+            @keyframes pulse-glow { 0%, 100% { opacity: 0.4; } 50% { opacity: 0.9; } }
+            @keyframes sync-flash {
+                0% { stroke-width: 1.5px; opacity: 0.25; }
+                15% { stroke-width: 4px; opacity: 1; stroke: #10ff00; filter: drop-shadow(0 0 8px rgba(16, 255, 0, 0.4)); }
+                100% { stroke-width: 1.5px; opacity: 0.25; }
+            }
+            @keyframes arc-pulse {
+                0%, 100% { transform: scale(1); opacity: 0.8; }
+                50% { transform: scale(1.02); opacity: 1; filter: drop-shadow(0 0 12px rgba(16, 255, 0, 0.4)); }
+            }
+            .anim-cw { transform-origin: 400px 245px; animation: cw-rotate 12s linear infinite; }
+            .anim-ccw { transform-origin: 400px 245px; animation: ccw-rotate 16s linear infinite; }
+            .anim-orbit-slow { transform-origin: 400px 245px; animation: ccw-rotate 24s linear infinite; }
+            .anim-pulse { animation: pulse-glow 3s infinite ease-in-out; }
+            .sync-link-pulse { transform-origin: 400px 245px; animation: sync-flash 2.5s infinite cubic-bezier(0.4, 0, 0.2, 1); }
+            .language-arc-group { transform-origin: 400px 245px; animation: arc-pulse 4s infinite ease-in-out; }
+            .constellation-node { transition: transform 0.4s ease, r 0.3s ease; }
+            .constellation-node:hover { transform: scale(1.4); transform-origin: center; cursor: crosshair; }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" fill="url(#bg-grid-pattern)" />
+    <line x1="0" y1="245" x2="800" y2="245" stroke="rgba(16, 255, 0, 0.03)" stroke-width="1.5" />
+    <line x1="400" y1="0" x2="400" y2="500" stroke="rgba(16, 255, 0, 0.03)" stroke-width="1.5" />
+
+    <g id="repositoryConstellation" opacity="0.4">
+        <path d="M 75,90 L 140,70 L 210,110 L 160,180 L 75,90 M 210,110 L 290,65 M 160,180 L 220,250 M 680,80 L 730,150 L 640,165 L 680,80 M 640,165 L 570,115 M 90,320 L 120,380 L 50,410 M 710,330 L 750,420 L 690,390 L 710,330" 
+              fill="none" stroke="#008f11" stroke-width="0.75" stroke-dasharray="2,4" />
+        <circle cx="75" cy="90" r="3" fill="#10ff00" class="constellation-node" />
+        <circle cx="140" cy="70" r="2" fill="#7fa383" class="constellation-node" />
+        <circle cx="210" cy="110" r="4" fill="#008f11" class="constellation-node" />
+        <circle cx="160" cy="180" r="2.5" fill="#10ff00" class="constellation-node" />
+        <circle cx="290" cy="65" r="3" fill="#ffffff" class="constellation-node" />
+        <circle cx="220" cy="250" r="2" fill="#008f11" class="constellation-node" />
+        <circle cx="680" cy="80" r="3.5" fill="#10ff00" class="constellation-node" />
+        <circle cx="730" cy="150" r="2" fill="#7fa383" class="constellation-node" />
+        <circle cx="640" cy="165" r="4" fill="#008f11" class="constellation-node" />
+        <circle cx="570" cy="115" r="2" fill="#10ff00" class="constellation-node" />
+        <circle cx="90" cy="320" r="3" fill="#008f11" class="constellation-node" />
+        <circle cx="120" cy="380" r="2" fill="#10ff00" class="constellation-node" />
+        <circle cx="50" cy="410" r="3.5" fill="#7fa383" class="constellation-node" />
+        <circle cx="710" cy="330" r="2.5" fill="#008f11" class="constellation-node" />
+        <circle cx="750" cy="420" r="4" fill="#10ff00" class="constellation-node" />
+        <circle cx="690" cy="390" r="2" fill="#ffffff" class="constellation-node" />
+    </g>
+
+    <g transform="translate(25, 35)">
+        <text x="0" y="15" fill="#ffffff" style="font-size: 16px; font-weight: bold; letter-spacing: 0.05em;">LegedsDaD</text>
+        <text x="175" y="13" fill="#10ff00" style="font-size: 9px; font-weight: bold; letter-spacing: 0.12em;">OS_USER // IDENTIFIED</text>
+    </g>
+
+    <g transform="translate(580, 35)">
+        <text x="0" y="0" fill="#7fa383" style="font-size: 9px; font-weight: bold; letter-spacing: 0.08em;">RECENT COMMITS</text>
+        <circle cx="5" cy="18" r="3" fill="#10ff00" filter="url(#subtle-glow)"/>
+        <text x="16" y="21" fill="#ffffff" style="font-size: 9px;">feat: core optimized</text>
+        <circle cx="5" cy="34" r="3" fill="#008f11"/>
+        <text x="16" y="37" fill="#7fa383" style="font-size: 9px;">fix: segment layers</text>
+    </g>
+
+    <g stroke="#008f11" stroke-width="1" stroke-dasharray="3,3">
+        <line x1="400" y1="245" x2="400" y2="105" class="sync-link-pulse" />
+        <line x1="400" y1="245" x2="400" y2="385" class="sync-link-pulse" />
+        <line x1="400" y1="245" x2="160" y2="245" class="sync-link-pulse" />
+        <line x1="400" y1="245" x2="640" y2="245" class="sync-link-pulse" />
+        <line x1="400" y1="245" x2="280" y2="135" class="sync-link-pulse" />
+        <line x1="400" y1="245" x2="520" y2="135" class="sync-link-pulse" />
+    </g>
+
+    <circle cx="400" cy="245" r="115" fill="none" stroke="#10ff00" stroke-width="0.75" stroke-dasharray="8, 12 40, 15 4, 8" opacity="0.5" class="anim-orbit-slow" />
+    <circle cx="400" cy="245" r="105" fill="none" stroke="#008f11" stroke-width="0.75" opacity="0.3" />
+    
+    <g class="anim-cw">
+        <circle cx="400" cy="245" r="85" fill="none" stroke="#10ff00" stroke-width="5" stroke-linecap="round" stroke-dasharray="430 500" filter="url(#hud-glow)" id="reactorArcPrimary" />
+        <circle cx="400" cy="245" r="85" fill="none" stroke="#008f11" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="100 500" stroke-dashoffset="300" />
+        <circle cx="400" cy="245" r="85" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+    </g>
+
+    <g class="language-arc-group">
+        <circle cx="400" cy="245" r="130" fill="none" stroke="#3178c6" stroke-width="3" stroke-dasharray="187 360" transform="rotate(0 400 245)" stroke-linecap="round" opacity="0.85" filter="url(#subtle-glow)" />
+        <circle cx="400" cy="245" r="130" fill="none" stroke="#cea47e" stroke-width="3" stroke-dasharray="93 360" transform="rotate(195 400 245)" stroke-linecap="round" opacity="0.85" filter="url(#subtle-glow)" />
+        <circle cx="400" cy="245" r="135" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="50 360" transform="rotate(295 400 245)" stroke-linecap="round" opacity="0.85" />
+        <circle cx="400" cy="245" r="135" fill="none" stroke="#e34c26" stroke-width="2" stroke-dasharray="28 360" transform="rotate(350 400 245)" stroke-linecap="round" opacity="0.85" />
+        
+        <circle cx="530" cy="245" r="3.5" fill="#ffffff" filter="url(#subtle-glow)" class="anim-cw" />
+        <circle cx="270" cy="245" r="2.5" fill="#10ff00" class="anim-ccw" />
+    </g>
+
+    <circle cx="400" cy="245" r="72" fill="none" stroke="#008f11" stroke-width="1" stroke-dasharray="6, 5" opacity="0.6" class="anim-ccw" />
+    <circle cx="400" cy="245" r="64" fill="none" stroke="#10ff00" stroke-width="1.2" stroke-dasharray="40 20 80 30" class="anim-cw" filter="url(#subtle-glow)"/>
+    <circle cx="400" cy="245" r="54" fill="#060913" stroke="#10ff00" stroke-width="2" class="anim-pulse" />
+
+    <g text-anchor="middle">
+        <text x="400" y="230" fill="#7fa383" style="font-size: 8px; letter-spacing: 0.15em; font-weight: bold;">CORE_PWR</text>
+        <text x="400" y="257" fill="#ffffff" style="font-size: 24px; font-weight: bold;" filter="url(#subtle-glow)" id="coreScore">5</text>
+        <text x="400" y="273" fill="#10ff00" style="font-size: 9px; font-weight: bold; letter-spacing: 0.05em;">D-TIER</text>
+    </g>
+
+    <g transform="translate(400, 105)">
+        <circle cx="0" cy="0" r="20" fill="#060913" stroke="#008f11" stroke-width="1.5" />
+        <text x="0" y="1" text-anchor="middle" fill="#ffffff" style="font-size: 10px; font-weight: bold;">0</text>
+        <text x="0" y="10" text-anchor="middle" fill="#7fa383" style="font-size: 6.5px; font-weight: bold;">STREAK</text>
+    </g>
+
+    <g transform="translate(400, 385)">
+        <circle cx="0" cy="0" r="20" fill="#060913" stroke="#008f11" stroke-width="1.5" />
+        <text x="0" y="1" text-anchor="middle" fill="#ffffff" style="font-size: 10px; font-weight: bold;">34</text>
+        <text x="0" y="10" text-anchor="middle" fill="#7fa383" style="font-size: 6.5px; font-weight: bold;">REPOS</text>
+    </g>
+
+    <g transform="translate(160, 245)">
+        <circle cx="0" cy="0" r="20" fill="#060913" stroke="#008f11" stroke-width="1.5" />
+        <text x="0" y="1" text-anchor="middle" fill="#ffffff" style="font-size: 9px; font-weight: bold;">1.8%</text>
+        <text x="0" y="10" text-anchor="middle" fill="#7fa383" style="font-size: 6.5px; font-weight: bold;">IMPACT</text>
+    </g>
+
+    <g transform="translate(640, 245)">
+        <circle cx="0" cy="0" r="20" fill="#060913" stroke="#008f11" stroke-width="1.5" />
+        <text x="0" y="1" text-anchor="middle" fill="#ffffff" style="font-size: 10px; font-weight: bold;">80</text>
+        <text x="0" y="10" text-anchor="middle" fill="#7fa383" style="font-size: 6.5px; font-weight: bold;">STARS</text>
+    </g>
+
+    <g transform="translate(280, 135)">
+        <circle cx="0" cy="0" r="20" fill="#060913" stroke="#008f11" stroke-width="1.5" />
+        <text x="0" y="1" text-anchor="middle" fill="#ffffff" style="font-size: 10px; font-weight: bold;">9</text>
+        <text x="0" y="10" text-anchor="middle" fill="#7fa383" style="font-size: 6px; font-weight: bold;">FOLLOWERS</text>
+    </g>
+
+    <g transform="translate(520, 135)">
+        <circle cx="0" cy="0" r="20" fill="#060913" stroke="#008f11" stroke-width="1.5" />
+        <text x="0" y="1" text-anchor="middle" fill="#ffffff" style="font-size: 10px; font-weight: bold;">382</text>
+        <text x="0" y="10" text-anchor="middle" fill="#7fa383" style="font-size: 6px; font-weight: bold;">FOLLOWING</text>
+    </g>
+
+    <g transform="translate(25, 435)">
+        <g id="heatmapGrid">
+            <rect x="0" y="0" width="10" height="10" rx="2" fill="#10ff00" class="anim-pulse" />
+            <rect x="14" y="0" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="28" y="0" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="42" y="0" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="56" y="0" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="70" y="0" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="84" y="0" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="98" y="0" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="112" y="0" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="126" y="0" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="140" y="0" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="154" y="0" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="168" y="0" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="182" y="0" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="196" y="0" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="210" y="0" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="224" y="0" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="238" y="0" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="252" y="0" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="0" y="14" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="14" y="14" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="28" y="14" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="42" y="14" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="56" y="14" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="70" y="14" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="84" y="14" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="98" y="14" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="112" y="14" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="126" y="14" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="140" y="14" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="154" y="14" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="168" y="14" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="182" y="14" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="196" y="14" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="210" y="14" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="224" y="14" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="238" y="14" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="252" y="14" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="0" y="28" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="14" y="28" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="28" y="28" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="42" y="28" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="56" y="28" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="70" y="28" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="84" y="28" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="98" y="28" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="112" y="28" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="126" y="28" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="140" y="28" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="154" y="28" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="168" y="28" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="182" y="28" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="196" y="28" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="210" y="28" width="10" height="10" rx="2" fill="#008f11" />
+            <rect x="224" y="28" width="10" height="10" rx="2" fill="#10ff00" />
+            <rect x="238" y="28" width="10" height="10" rx="2" fill="#052b0d" />
+            <rect x="252" y="28" width="10" height="10" rx="2" fill="#008f11" />
+        </g>
+    </g>
+
+    <g transform="translate(460, 435)" style="font-size: 10px; font-weight: bold;">
+        <g transform="translate(0, 0)">
+            <circle cx="5" cy="5" r="4" fill="#3178c6"/>
+            <text x="16" y="9" fill="#ffffff"></text>
+        </g>
+        <g transform="translate(0, 22)">
+            <circle cx="5" cy="5" r="4" fill="#cea47e"/>
+            <text x="16" y="9" fill="#ffffff"></text>
+        </g>
+        
+        <g transform="translate(170, 0)">
+            <circle cx="5" cy="5" r="4" fill="#38bdf8"/>
+            <text x="16" y="9" fill="#ffffff"></text>
+        </g>
+        <g transform="translate(170, 22)">
+            <circle cx="5" cy="5" r="4" fill="#e34c26"/>
+            <text x="16" y="9" fill="#ffffff"></text>
+        </g>
+    </g>
+</svg>
