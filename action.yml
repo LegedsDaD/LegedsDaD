@@ -1,0 +1,40 @@
+name: GitBoard
+description: Generate a GitHub profile README dashboard SVG from templates and inject it into README.md
+inputs:
+  username:
+    description: GitHub username (defaults to repository owner)
+    required: false
+  template:
+    description: Template folder name or base name (e.g. "Quantum Forge")
+    required: false
+    default: Quantum Forge
+  theme:
+    description: Template theme variant
+    required: false
+    default: dark
+  output:
+    description: Output SVG path
+    required: false
+    default: assets/my_dashboard.svg
+  readme:
+    description: README path to update
+    required: false
+    default: README.md
+  prefer_txt:
+    description: Prefer *_txt.txt templates
+    required: false
+    default: "true"
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        set -euo pipefail
+        python3 --version
+        python3 gitboard.py \
+          --username "${{ inputs.username || github.repository_owner }}" \
+          --template "${{ inputs.template }}" \
+          --theme "${{ inputs.theme }}" \
+          --output "${{ inputs.output }}" \
+          --readme "${{ inputs.readme }}" \
+          $([ "${{ inputs.prefer_txt }}" = "true" ] && echo "--prefer-txt" || true)
