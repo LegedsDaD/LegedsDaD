@@ -264,3 +264,7 @@ Goals:
 ---
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00d4ff,50:1e90ff,100:0d1117&height=140&section=footer"/>
+
+<!-- Gitboard Start -->
+![GitBoard Dashboard](assets/my_dashboard.svg)
+<!-- Gitboard End -->
