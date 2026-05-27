@@ -138,7 +138,7 @@
 
     <g transform="translate(640, 245)">
         <circle cx="0" cy="0" r="20" fill="#060913" stroke="#008f11" stroke-width="1.5" />
-        <text x="0" y="1" text-anchor="middle" fill="#ffffff" style="font-size: 10px; font-weight: bold;">80</text>
+        <text x="0" y="1" text-anchor="middle" fill="#ffffff" style="font-size: 10px; font-weight: bold;">81</text>
         <text x="0" y="10" text-anchor="middle" fill="#7fa383" style="font-size: 6.5px; font-weight: bold;">STARS</text>
     </g>
 
