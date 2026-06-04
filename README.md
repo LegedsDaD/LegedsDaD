@@ -82,13 +82,7 @@
 
 # 🏆 GitHub Trophies
 
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=LegedsDaD&theme=algolia&no-frame=true&margin-w=12&margin-h=12&row=2&column=4"/>
-
-</div>
-
----
+![Trophies](https://icon.mzrdev.com/trophy?username=LegedsDaD&theme=dark)
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
@@ -160,21 +154,6 @@ Goals:
 
 # 📈 GitHub Stats
 
-<div align="center">
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=LegedsDaD&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117"/>
-
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=LegedsDaD&theme=tokyonight&hide_border=true&background=0d1117"/>
-
-<br/><br/>
-
-<img width="70%" src="https://github-readme-activity-graph.vercel.app/graph?username=legedsdad&bg_color=0d1117&color=1e90ff&line=1e90ff&point=ffffff&area=true&hide_border=true"/>
-
-</div>
-
----
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 # 🏆 GitHub Achievements
 
