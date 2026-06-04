@@ -153,7 +153,11 @@ Goals:
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 # 📈 GitHub Stats
+<div align="center">
 
+[![Pranesh's GitHub stats](https://github-readme-stats-fast.vercel.app/api?username=LegedsDaD)](https://github.com/pranesh-2005/github-readme-stats-fast)![GitHub Languages](https://github-languages-card.vercel.app/api/top-languages?username=LegedsDaD&theme=dark)
+
+</div>
 
 # 🏆 GitHub Achievements
 
