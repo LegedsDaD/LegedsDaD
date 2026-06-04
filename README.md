@@ -203,6 +203,8 @@ Goals:
 <a href="my-badges/yeti.md"><img src="https://my-badges.github.io/my-badges/yeti.png" alt="I found the yeti!" title="I found the yeti!" width="64"></a>
 <!-- my-badges end -->
 
+</div>
+
 # 🐍 Contributions
 
 <div align="center">
