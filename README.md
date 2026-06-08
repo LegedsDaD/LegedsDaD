@@ -1,3 +1,5 @@
+
+ 
  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,25:0a3d62,55:1e90ff,100:00d4ff&height=240&section=header&text=Hi%20There!%20👋%20I'm%20LegedsDaD&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20•%20AI%20Builder%20•%20Python%20Developer&descAlignY=60&descSize=18&descColor=c9eaff"/>
 
 <br/>
