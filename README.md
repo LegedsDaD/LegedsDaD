@@ -8,10 +8,12 @@
 
 <br/>
 
-<img src="https://img.shields.io/badge/AI-Developer-1E90FF?style=for-the-badge&logo=openai&logoColor=white"/>
-<img src="https://img.shields.io/badge/Python-Developer-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Open%20Source-Contributor-00C853?style=for-the-badge&logo=github&logoColor=white"/>
-<img src="https://img.shields.io/badge/Projects-Innovative-FF5722?style=for-the-badge&logo=code&logoColor=white"/>
+<div align="center">
+
+<img src="https://img.shields.io/badge/AI_Developer-1E90FF?style=flat-rounded&logo=openai&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python_Developer-3776AB?style=flat-rounded&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Open_Source_Contributor-00C853?style=flat-rounded&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/Projects_Innovative-FF5722?style=flat-rounded&logo=code&logoColor=white"/>
 
 </div>
 
@@ -24,21 +26,21 @@
 
 <div align="center">
 
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat-rounded&logo=c%2B%2B&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat-rounded&logo=html5&logoColor=white)
+![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=flat-rounded&logo=markdown&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=flat-rounded&logo=python&logoColor=ffdd54)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat-rounded&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat-rounded&logo=pandas&logoColor=white)
 
 <br/>
 
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
-![CMake](https://img.shields.io/badge/CMake-%23008FBA.svg?style=for-the-badge&logo=cmake&logoColor=white)
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat-rounded&logo=PyTorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat-rounded&logo=TensorFlow&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat-rounded&logo=scikit-learn&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=flat-rounded&logo=Matplotlib&logoColor=black)
+![CMake](https://img.shields.io/badge/CMake-%23008FBA.svg?style=flat-rounded&logo=cmake&logoColor=white)
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-rounded&logo=Arduino&logoColor=white)
 
 </div>
 
@@ -50,14 +52,13 @@
 
 <div align="center">
 
-<img src="https://komarev.com/ghpvc/?username=LegedsDaD&label=Profile%20Views&color=1e90ff&style=for-the-badge"/>
-<img src="https://img.shields.io/github/followers/LegedsDaD?label=Followers&style=for-the-badge&color=1e90ff"/>
-<img src="https://img.shields.io/github/stars/LegedsDaD?affiliations=OWNER%2CCOLLABORATOR&label=Total%20Stars&style=for-the-badge&color=ffb400&logo=star"/>
+<img src="https://komarev.com/ghpvc/?username=LegedsDaD&label=Profile%20Views&color=1e90ff&style=flat-rounded"/>
+<img src="https://img.shields.io/github/followers/LegedsDaD?label=Followers&style=flat-rounded&color=1e90ff"/>
+<img src="https://img.shields.io/github/stars/LegedsDaD?affiliations=OWNER%2CCOLLABORATOR&label=Total%20Stars&style=flat-rounded&color=ffb400&logo=star"/>
 
 </div>
 
 ---
-
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 # 🏆 GitHub Trophies
