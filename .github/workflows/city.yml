@@ -2,14 +2,10 @@ name: 3D City Builder
 
 on:
   schedule:
+    # Runs at 00:00 UTC every day (every 24 hours)
     - cron: "0 0 * * *"
   
-  workflow_dispatch:
-
-  push:
-    branches:
-      - master
-      - main
+  workflow_dispatch: # Keeps the button so you can trigger it manually
 
 jobs:
   build:
@@ -22,9 +18,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          
           filename: profile-3d-city.svg
-          
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
