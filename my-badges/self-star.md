@@ -1,5 +1,5 @@
-<img src="https://my-badges.github.io/my-badges/self-star.png" alt="I&apos;ve starred 26 my own repositories." title="I&apos;ve starred 26 my own repositories." width="128">
-<strong>I&apos;ve starred 26 my own repositories.</strong>
+<img src="https://my-badges.github.io/my-badges/self-star.png" alt="I&apos;ve starred 27 my own repositories." title="I&apos;ve starred 27 my own repositories." width="128">
+<strong>I&apos;ve starred 27 my own repositories.</strong>
 <br><br>
 
 - <a href="https://github.com/LegedsDaD/Face-Detection-Code-Using-Arduino-UNO">LegedsDaD/Face-Detection-Code-Using-Arduino-UNO</a>
@@ -28,6 +28,7 @@
 - <a href="https://github.com/LegedsDaD/ThreeDimensions-v1.0.0">LegedsDaD/ThreeDimensions-v1.0.0</a>
 - <a href="https://github.com/LegedsDaD/Simple-The_Game_Engine">LegedsDaD/Simple-The_Game_Engine</a>
 - <a href="https://github.com/LegedsDaD/py_cpp_pair">LegedsDaD/py_cpp_pair</a>
+- <a href="https://github.com/LegedsDaD/LDcmd">LegedsDaD/LDcmd</a>
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>

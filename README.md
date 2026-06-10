@@ -197,7 +197,7 @@ Goals:
 <a href="my-badges/pi-day.md"><img src="https://my-badges.github.io/my-badges/pi-day.png" alt="Happy March 14th! I committed on a Pi Day!" title="Happy March 14th! I committed on a Pi Day!" width="64"></a>
 <a href="my-badges/rebel-coder.md"><img src="https://my-badges.github.io/my-badges/rebel-coder.png" alt="I am a rebel coder." title="I am a rebel coder." width="64"></a>
 <a href="my-badges/science-fiction-day.md"><img src="https://my-badges.github.io/my-badges/science-fiction-day.png" alt="I committed on Isaac Asimov&apos;s birthday / National Science Fiction Day!" title="I committed on Isaac Asimov&apos;s birthday / National Science Fiction Day!" width="64"></a>
-<a href="my-badges/self-star.md"><img src="https://my-badges.github.io/my-badges/self-star.png" alt="I&apos;ve starred 26 my own repositories." title="I&apos;ve starred 26 my own repositories." width="64"></a>
+<a href="my-badges/self-star.md"><img src="https://my-badges.github.io/my-badges/self-star.png" alt="I&apos;ve starred 27 my own repositories." title="I&apos;ve starred 27 my own repositories." width="64"></a>
 <a href="my-badges/morning-commits.md"><img src="https://my-badges.github.io/my-badges/morning-commits.png" alt="I commit in the morning." title="I commit in the morning." width="64"></a>
 <a href="my-badges/evening-commits.md"><img src="https://my-badges.github.io/my-badges/evening-commits.png" alt="I commit in the evening." title="I commit in the evening." width="64"></a>
 <a href="my-badges/midnight-commits.md"><img src="https://my-badges.github.io/my-badges/midnight-commits.png" alt="I commit at midnight." title="I commit at midnight." width="64"></a>
