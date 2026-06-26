@@ -135,7 +135,7 @@ Goals:
 # 📈 GitHub Stats
 <div align="center">
 
-[![Pranesh's GitHub stats](https://github-readme-stats-fast.vercel.app/api?username=LegedsDaD)](https://github.com/pranesh-2005/github-readme-stats-fast)![Most Used Languages](https://language-count.joaopdias.dev.br/?username=LegedsDaD)
+![GitHub dashboard](https://github-dashboard-sooty.vercel.app/api/dashboard?username=LegedsDaD&theme=sunset)
 
 </div>
 
