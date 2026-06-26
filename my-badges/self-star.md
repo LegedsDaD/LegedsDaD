@@ -1,5 +1,5 @@
-<img src="https://my-badges.github.io/my-badges/self-star.png" alt="I&apos;ve starred 27 my own repositories." title="I&apos;ve starred 27 my own repositories." width="128">
-<strong>I&apos;ve starred 27 my own repositories.</strong>
+<img src="https://my-badges.github.io/my-badges/self-star.png" alt="I&apos;ve starred 33 my own repositories." title="I&apos;ve starred 33 my own repositories." width="128">
+<strong>I&apos;ve starred 33 my own repositories.</strong>
 <br><br>
 
 - <a href="https://github.com/LegedsDaD/Face-Detection-Code-Using-Arduino-UNO">LegedsDaD/Face-Detection-Code-Using-Arduino-UNO</a>
@@ -29,6 +29,12 @@
 - <a href="https://github.com/LegedsDaD/Simple-The_Game_Engine">LegedsDaD/Simple-The_Game_Engine</a>
 - <a href="https://github.com/LegedsDaD/py_cpp_pair">LegedsDaD/py_cpp_pair</a>
 - <a href="https://github.com/LegedsDaD/LDcmd">LegedsDaD/LDcmd</a>
+- <a href="https://github.com/LegedsDaD/C-Arduino-AI-code-fixer-with-Voice-alerts-using-Gemini-API-or-OpenAI-API-">LegedsDaD/C-Arduino-AI-code-fixer-with-Voice-alerts-using-Gemini-API-or-OpenAI-API-</a>
+- <a href="https://github.com/LegedsDaD/Python-AI-Code-Fixer">LegedsDaD/Python-AI-Code-Fixer</a>
+- <a href="https://github.com/LegedsDaD/HTML-Document-Analyzer">LegedsDaD/HTML-Document-Analyzer</a>
+- <a href="https://github.com/LegedsDaD/Advanced-Robotic-Arm">LegedsDaD/Advanced-Robotic-Arm</a>
+- <a href="https://github.com/LegedsDaD/AI-Using-Python-and-HTML">LegedsDaD/AI-Using-Python-and-HTML</a>
+- <a href="https://github.com/LegedsDaD/Github-Dashboard">LegedsDaD/Github-Dashboard</a>
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
