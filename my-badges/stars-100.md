@@ -35,10 +35,10 @@ Repos:
 * <a href="https://github.com/LegedsDaD/ThreeDimensions-v1.0.0">LegedsDaD/ThreeDimensions-v1.0.0: ★2</a>
 * <a href="https://github.com/LegedsDaD/TrueGraphics">LegedsDaD/TrueGraphics: ★2</a>
 * <a href="https://github.com/LegedsDaD/EasierBot">LegedsDaD/EasierBot: ★2</a>
+* <a href="https://github.com/LegedsDaD/Github-Dashboard">LegedsDaD/Github-Dashboard: ★2</a>
 * <a href="https://github.com/LegedsDaD/Competition-Entry">LegedsDaD/Competition-Entry: ★1</a>
 * <a href="https://github.com/AmitManna99/Prompt2App">AmitManna99/Prompt2App: ★1</a>
 * <a href="https://github.com/LegedsDaD/py_cpp_pair">LegedsDaD/py_cpp_pair: ★1</a>
-* <a href="https://github.com/LegedsDaD/Github-Dashboard">LegedsDaD/Github-Dashboard: ★1</a>
 
 <sup>I have push, maintainer or admin permissions, so I'm definitely an author.<sup>
 
