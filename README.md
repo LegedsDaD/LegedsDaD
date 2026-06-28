@@ -230,8 +230,6 @@ Goals:
 
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github)](https://github.com/LegedsDaD)
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:legendsdad001@gmail.com)
-
 </div>
 
 ---
