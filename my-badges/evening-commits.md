@@ -4,12 +4,9 @@
 
 Commits:
 
-- <a href="https://github.com/LegedsDaD/LegedsDaD/commit/8d64466ae38d7f183b67750deb080daaa279a923">8d64466</a>
-- <a href="https://github.com/LegedsDaD/LegedsDaD/commit/3d380a55089046bb5b2ecd359187400b47d09eb3">3d380a5</a>
-- <a href="https://github.com/LegedsDaD/LDcmd/commit/daec66b0f54cae8936e1f6fccafcc41aa396852f">daec66b</a>
-- <a href="https://github.com/LegedsDaD/LegedsDaD/commit/fe94bd4a90d355c97ea1e3c767ed0ca5082d2c4f">fe94bd4</a>
-- <a href="https://github.com/LegedsDaD/LegedsDaD/commit/5ae79ce7b0b98a5044d143bf60d2c0902b69eddd">5ae79ce</a>
-- <a href="https://github.com/LegedsDaD/LegedsDaD/commit/f6241d88d5a6bf8b084fe70ac065be09fddf0b1e">f6241d8</a>
+- <a href="https://github.com/AmitManna99/Prompt2App/commit/3fb4427d3cac74b679d2697a8385ca269b727232">3fb4427</a>
+- <a href="https://github.com/AmitManna99/Prompt2App/commit/a6a0f55776c6d93917ed5243ed8af5ecca1df05b">a6a0f55</a>
+- <a href="https://github.com/AmitManna99/Prompt2App/commit/b2888fa4722f1afacd312033cc44960f4ba4501c">b2888fa</a>
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>

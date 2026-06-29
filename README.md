@@ -200,10 +200,10 @@ Goals:
 <a href="my-badges/self-star.md"><img src="https://my-badges.github.io/my-badges/self-star.png" alt="I&apos;ve starred 33 my own repositories." title="I&apos;ve starred 33 my own repositories." width="64"></a>
 <a href="my-badges/morning-commits.md"><img src="https://my-badges.github.io/my-badges/morning-commits.png" alt="I commit in the morning." title="I commit in the morning." width="64"></a>
 <a href="my-badges/evening-commits.md"><img src="https://my-badges.github.io/my-badges/evening-commits.png" alt="I commit in the evening." title="I commit in the evening." width="64"></a>
-<a href="my-badges/midnight-commits.md"><img src="https://my-badges.github.io/my-badges/midnight-commits.png" alt="I commit at midnight." title="I commit at midnight." width="64"></a>
 <a href="my-badges/emoji-only-commit.md"><img src="https://my-badges.github.io/my-badges/emoji-only-commit.png" alt="I used only emojis in my commit message." title="I used only emojis in my commit message." width="64"></a>
 <a href="my-badges/yeti.md"><img src="https://my-badges.github.io/my-badges/yeti.png" alt="I found the yeti!" title="I found the yeti!" width="64"></a>
 <a href="my-badges/stars-100.md"><img src="https://my-badges.github.io/my-badges/stars-100.png" alt="I collected 100 stars." title="I collected 100 stars." width="64"></a>
+<a href="my-badges/sleepy-coder.md"><img src="https://my-badges.github.io/my-badges/sleepy-coder.png" alt="I am a sleepy coder." title="I am a sleepy coder." width="64"></a>
 <!-- my-badges end -->
 
 </div>
