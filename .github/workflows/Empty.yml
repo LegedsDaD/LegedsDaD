@@ -1,0 +1,36 @@
+name: Create Empty Branch
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch_name:
+        description: 'Name of the new empty branch'
+        required: true
+        type: string
+
+jobs:
+  create-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Initialize and Push Orphan Branch
+        run: |
+          # Configure Git credentials
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@://github.com"
+          
+          # Create the empty orphan branch
+          git switch --orphan ${{ github.event.inputs.branch_name }}
+          
+          # Remove all staged files
+          git rm -rf .
+          
+          # Create the required empty initial commit
+          git commit --allow-empty -m "Initialize empty branch via GitHub Actions"
+          
+          # Push the branch to the remote repository
+          git push origin ${{ github.event.inputs.branch_name }}
