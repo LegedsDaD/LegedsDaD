@@ -11,6 +11,8 @@ on:
 jobs:
   create-branch:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -19,18 +21,18 @@ jobs:
 
       - name: Initialize and Push Orphan Branch
         run: |
-          # Configure Git credentials
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@://github.com"
-          
-          # Create the empty orphan branch
-          git switch --orphan ${{ github.event.inputs.branch_name }}
-          
-          # Remove all staged files
-          git rm -rf .
-          
-          # Create the required empty initial commit
-          git commit --allow-empty -m "Initialize empty branch via GitHub Actions"
-          
-          # Push the branch to the remote repository
+          # Configure Git credentials 
+          git config --global user.name "github-actions[bot]" 
+          git config --global user.email "41898282+github-actions[bot]@://github.com" 
+
+          # Create the empty orphan branch using the manual input
+          git switch --orphan ${{ github.event.inputs.branch_name }} 
+
+          # Remove staged files safely (silences error if directory is already empty)
+          git rm -rf . 2>/dev/null || true
+
+          # Create the required empty initial commit 
+          git commit --allow-empty -m "Initialize empty branch via GitHub Actions" 
+
+          # Push the branch to the remote repository 
           git push origin ${{ github.event.inputs.branch_name }}
