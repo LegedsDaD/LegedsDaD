@@ -135,7 +135,7 @@ Goals:
 # 📈 GitHub Stats
 <div align="center">
 
-![GitHub dashboard](https://github-dashboard-sooty.vercel.app/api/dashboard?username=LegedsDaD&theme=sunset)
+![GitHub dashboard](https://github-dashboard-sooty.vercel.app/api/dashboard?username=LegedsDaD&theme=forest)
 
 </div>
 
