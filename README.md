@@ -141,52 +141,9 @@ Goals:
 
 # 🏆 GitHub Achievements
 
-<div align="center">
-
-<table>
-<tr>
-
-<td align="center">
-<img src="./assets/starstruck-default.png" width="120px"/><br>
-<b>Starstruck</b>
-</td>
-
-<td align="center">
-<img src="./assets/quickdraw-default.png" width="120px"/><br>
-<b>Quickdraw</b>
-</td>
-
-<td align="center">
-<img src="./assets/yolo-default.png" width="120px"/><br>
-<b>YOLO</b>
-</td>
-
-<td align="center">
-
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="./assets/pull-shark-bronze.png"
-  />
-  <img
-    src="./assets/pull-shark-default.png"
-    width="120px"
-  />
-</picture>
-
-<br>
-<b>Pull Shark</b>
-
-</td>
-
-</tr>
-</table>
-
 <!-- my-badges start -->
 <a href="my-badges/rebel-coder.md"><img src="https://my-badges.github.io/my-badges/rebel-coder.png" alt="I am a rebel coder." title="I am a rebel coder." width="64"></a>
 <!-- my-badges end -->
-
-</div>
 
 # 🐍 Contributions
 
