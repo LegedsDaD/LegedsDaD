@@ -7,6 +7,9 @@
 
 <br/>
 
+Join my Discord Server - https://discord.gg/pBAF5bHc
+
+
 <div align="center">
 
 <img src="https://img.shields.io/badge/AI_Developer-1E90FF?style=flat-rounded&logo=openai&logoColor=white"/>
