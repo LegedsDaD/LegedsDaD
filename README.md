@@ -7,7 +7,7 @@
 
 <br/>
 
-Join my Discord Server - https://discord.gg/pBAF5bHc
+## Join my Discord Server [@LegendWorks](https://discord.gg/8vtkfhBVSg)
 
 
 <div align="center">
