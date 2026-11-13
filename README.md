@@ -71,32 +71,41 @@
 
 # 👨‍💻 About Me
 
-<img align="right" width="320" src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif"/>
+<table>
+  <tr>
+    <td width="560" valign="top">
 
 ```yaml
 Name: LegedsDaD
 Role: Full Stack Python Developer
 
 Focus:
-  - AI Agents
-  - Automation
-  - Developer Tools
-  - High Performance Applications
+  - AI Agents & Intelligent Automation
+  - Custom Developer Tools & CLI Utilities
+  - High-Performance Backend Applications
 
 Currently Learning:
-  - LLM Integrations
-  - Advanced UI/UX
-  - AI Workspaces
+  - Advanced LLM Integrations & Agent Workflows
+  - Modern UI/UX & Local AI Workspaces
 
 Goals:
-  - Build innovative developer tools
-  - Create powerful local AI systems
-  - Contribute to open source
+  - Build innovative, open-source developer tools
+  - Architect powerful, privacy-first local AI systems
+  - Contribute meaningfully to the Python & AI community
 ```
 
-<br clear="both"/>
+  </td>
+    <td width="340" align="center" valign="middle">
+      <img src="./teal_chess_king_wave.gif" width="300" alt="Teal chess king wave" />
+    </td>
+  </tr>
+</table>
 
 ---
+
+
+
+
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
