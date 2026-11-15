@@ -1,9 +1,21 @@
+<h1 align="center">
+  <b>《~~WELCOME TO MY PROFILE~~》</b>
+</h1>
 
- <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,25:0a3d62,55:1e90ff,100:00d4ff&height=240&section=header&text=Hi%20There!%20👋%20I'm%20LegedsDaD&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20•%20AI%20Builder%20•%20Python%20Developer&descAlignY=60&descSize=18&descColor=c9eaff"/>
+ 
+ 
+ 
+ 
+ <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,25:0a3d62,55:1e90ff,100:00d4ff&height=240&section=header&text=Hi%20There!%20👋%20I'm%20LegendsDaD&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20•%20AI%20Builder%20•%20Python%20Developer&descAlignY=60&descSize=18&descColor=c9eaff"/>
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2200&pause=800&color=1E90FF&center=true&vCenter=true&width=700&height=55&lines=🤖+AI+%26+Automation+Builder;🐍+Python+Developer;⚡+Clean+Code+%7C+Performance;🚀+Building+Cool+Projects)](https://git.io/typing-svg)
+
+<h1 align="center">
+
+ [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2200&pause=800&color=1E90FF&center=true&vCenter=true&width=700&height=55&lines=🤖+AI+%26+Automation+Builder;🐍+Python+Developer;⚡+Clean+Code+%7C+Performance;🚀+Building+Cool+Projects)](https://git.io/typing-svg)
+
+</h1>
 
 <br/>
 
