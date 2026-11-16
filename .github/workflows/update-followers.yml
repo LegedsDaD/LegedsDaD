@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -42,5 +44,8 @@ jobs:
             echo "No changes in followers gallery."
           else
             git commit -m "Update GitHub followers gallery"
-            git push
+
+            git pull --rebase origin main
+
+            git push origin main
           fi
