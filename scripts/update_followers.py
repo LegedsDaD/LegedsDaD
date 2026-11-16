@@ -2,6 +2,7 @@
 import os
 import requests
 import html
+import textwrap
 
 USERNAME = os.environ["GITHUB_USERNAME"]
 TOKEN = os.environ["GITHUB_TOKEN"]
@@ -63,69 +64,113 @@ def generate_gallery(followers):
         cells = []
 
         for follower in followers[i:i + columns]:
-            username = html.escape(follower["login"], quote=True)
-            profile_url = html.escape(follower["html_url"], quote=True)
-            avatar_url = html.escape(follower["avatar_url"], quote=True)
+
+            username = html.escape(
+                follower["login"],
+                quote=True
+            )
+
+            profile_url = html.escape(
+                follower["html_url"],
+                quote=True
+            )
+
+            avatar_url = html.escape(
+                follower["avatar_url"],
+                quote=True
+            )
 
             cell = f"""
-            <td align="center" width="16.66%">
-                <a href="{profile_url}">
-                    <img
-                        src="{avatar_url}"
-                        width="80"
-                        height="80"
-                        alt="@{username}"
-                        style="border-radius: 50%;"
-                    />
-                    <br />
-                    <sub><b>@{username}</b></sub>
-                </a>
-            </td>
-            """
+<td align="center" width="16.66%">
+    <a href="{profile_url}">
+        <img
+            src="{avatar_url}"
+            width="80"
+            height="80"
+            alt="@{username}"
+            style="border-radius: 50%;"
+        />
+        <br />
+        <sub><b>@{username}</b></sub>
+    </a>
+</td>
+"""
 
             cells.append(cell)
 
+        # Fill remaining columns
         while len(cells) < columns:
             cells.append("<td></td>")
 
-        rows.append("<tr>" + "".join(cells) + "</tr>")
+        rows.append(
+            "<tr>" + "".join(cells) + "</tr>"
+        )
 
-    return f"""
-    <div align="center">
-        <p><b>{len(followers)} amazing people are following me!</b></p>
-        <table>
-            {''.join(rows)}
-        </table>
-    </div>
-    """
+    gallery = f"""
+<div align="center">
+    <p><b>{len(followers)} amazing people are following me!</b></p>
+
+    <table>
+        {''.join(rows)}
+    </table>
+</div>
+"""
+
+    # Remove unwanted indentation
+    return textwrap.dedent(gallery).strip()
 
 
 def update_readme(gallery):
-    with open(README_FILE, "r", encoding="utf-8") as file:
+
+    with open(
+        README_FILE,
+        "r",
+        encoding="utf-8"
+    ) as file:
+
         readme = file.read()
 
-    if START_MARKER not in readme or END_MARKER not in readme:
-        raise ValueError("Followers markers were not found in README.md")
+    if START_MARKER not in readme:
+        raise ValueError(
+            "FOLLOWERS:START marker not found!"
+        )
+
+    if END_MARKER not in readme:
+        raise ValueError(
+            "FOLLOWERS:END marker not found!"
+        )
 
     start = readme.index(START_MARKER) + len(START_MARKER)
     end = readme.index(END_MARKER)
 
     if start > end:
-        raise ValueError("Invalid followers marker order")
+        raise ValueError(
+            "Invalid followers marker order!"
+        )
+
+    # Ensure generated HTML is not interpreted as
+    # a Markdown indented code block.
+    gallery = textwrap.dedent(gallery).strip()
 
     updated_readme = (
         readme[:start]
-        + "\n"
+        + "\n\n"
         + gallery
-        + "\n"
+        + "\n\n"
         + readme[end:]
     )
 
-    with open(README_FILE, "w", encoding="utf-8") as file:
+    with open(
+        README_FILE,
+        "w",
+        encoding="utf-8"
+    ) as file:
+
         file.write(updated_readme)
 
 
 if __name__ == "__main__":
+
     print(f"Fetching followers for {USERNAME}...")
 
     followers = fetch_followers()
