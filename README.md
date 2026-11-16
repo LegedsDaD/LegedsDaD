@@ -184,468 +184,869 @@ Goals:
 
 <div align="center">
 
+<h3>✦ THE PEOPLE BEHIND THE SUPPORT ✦</h3>
+
 <p>
-    <b>🌟 30 amazing people are following me!</b>
+    <strong>30 FOLLOWERS</strong>
+    &nbsp; • &nbsp;
+    <sub>THANK YOU FOR BEING HERE</sub>
 </p>
 
-<table>
+<table width="100%" align="center">
+<tbody>
 <tr>
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/abdullokhonz">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/abdullokhonz" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/153506949?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@abdullokhonz"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@abdullokhonz</b></sub>
+
+        <br /><br />
+
+        <strong>@abdullokhonz</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/AhmedAlvi29">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/AhmedAlvi29" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/145841606?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@AhmedAlvi29"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@AhmedAlvi29</b></sub>
+
+        <br /><br />
+
+        <strong>@AhmedAlvi29</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/amasen02">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/amasen02" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/97525823?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@amasen02"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@amasen02</b></sub>
+
+        <br /><br />
+
+        <strong>@amasen02</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/AmitManna99">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/AmitManna99" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/54736237?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@AmitManna99"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@AmitManna99</b></sub>
+
+        <br /><br />
+
+        <strong>@AmitManna99</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/AppServiceProvider">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/AppServiceProvider" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/47697490?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@AppServiceProvider"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@AppServiceProvider</b></sub>
+
+        <br /><br />
+
+        <strong>@AppServiceProvider</strong>
+
     </a>
+
 </td>
 
+</tr><tr>
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/aryan8-git">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/aryan8-git" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/266218443?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@aryan8-git"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@aryan8-git</b></sub>
+
+        <br /><br />
+
+        <strong>@aryan8-git</strong>
+
     </a>
+
 </td>
 
-</tr><tr>
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/axelyahirgonzalesmartinez541-gif">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/axelyahirgonzalesmartinez541-gif" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/251968655?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@axelyahirgonzalesmartinez541-gif"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@axelyahirgonzalesmartinez541-gif</b></sub>
+
+        <br /><br />
+
+        <strong>@axelyahirgonzalesmartinez541-gif</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/binitkafle">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/binitkafle" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/257916351?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@binitkafle"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@binitkafle</b></sub>
+
+        <br /><br />
+
+        <strong>@binitkafle</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/bklll98">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/bklll98" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/353693728?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@bklll98"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@bklll98</b></sub>
+
+        <br /><br />
+
+        <strong>@bklll98</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/Code2With-Pratik">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/Code2With-Pratik" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/169572793?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@Code2With-Pratik"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@Code2With-Pratik</b></sub>
+
+        <br /><br />
+
+        <strong>@Code2With-Pratik</strong>
+
     </a>
+
 </td>
 
+</tr><tr>
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/codeby-Vishwajeet">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/codeby-Vishwajeet" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/280482873?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@codeby-Vishwajeet"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@codeby-Vishwajeet</b></sub>
+
+        <br /><br />
+
+        <strong>@codeby-Vishwajeet</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/Codehide0989">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/Codehide0989" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/128410304?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@Codehide0989"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@Codehide0989</b></sub>
+
+        <br /><br />
+
+        <strong>@Codehide0989</strong>
+
     </a>
+
 </td>
 
-</tr><tr>
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/data-probe-1">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/data-probe-1" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/292077293?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@data-probe-1"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@data-probe-1</b></sub>
+
+        <br /><br />
+
+        <strong>@data-probe-1</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/EasierBot">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/EasierBot" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/269893018?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@EasierBot"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@EasierBot</b></sub>
+
+        <br /><br />
+
+        <strong>@EasierBot</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/fmoorenoo">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/fmoorenoo" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/151165920?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@fmoorenoo"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@fmoorenoo</b></sub>
+
+        <br /><br />
+
+        <strong>@fmoorenoo</strong>
+
     </a>
+
 </td>
 
+</tr><tr>
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/gam3r999">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/gam3r999" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/191417722?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@gam3r999"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@gam3r999</b></sub>
+
+        <br /><br />
+
+        <strong>@gam3r999</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/gotkunal15">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/gotkunal15" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/311084442?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@gotkunal15"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@gotkunal15</b></sub>
+
+        <br /><br />
+
+        <strong>@gotkunal15</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/IsaacAlves7">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/IsaacAlves7" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/61624336?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@IsaacAlves7"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@IsaacAlves7</b></sub>
+
+        <br /><br />
+
+        <strong>@IsaacAlves7</strong>
+
     </a>
+
 </td>
 
-</tr><tr>
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/jewelshirat">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/jewelshirat" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/221452927?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@jewelshirat"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@jewelshirat</b></sub>
+
+        <br /><br />
+
+        <strong>@jewelshirat</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/Kukzze">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/Kukzze" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/91667682?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@Kukzze"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@Kukzze</b></sub>
+
+        <br /><br />
+
+        <strong>@Kukzze</strong>
+
     </a>
-</td>
 
-
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/nithin42">
-        <img
-            src="https://avatars.githubusercontent.com/u/52503252?v=4"
-            width="80"
-            height="80"
-            alt="@nithin42"
-            style="border-radius:50%;"
-        />
-        <br />
-        <sub><b>@nithin42</b></sub>
-    </a>
-</td>
-
-
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/pandasipra76-cell">
-        <img
-            src="https://avatars.githubusercontent.com/u/259558725?v=4"
-            width="80"
-            height="80"
-            alt="@pandasipra76-cell"
-            style="border-radius:50%;"
-        />
-        <br />
-        <sub><b>@pandasipra76-cell</b></sub>
-    </a>
-</td>
-
-
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/ProfessorGhoshal">
-        <img
-            src="https://avatars.githubusercontent.com/u/261142245?v=4"
-            width="80"
-            height="80"
-            alt="@ProfessorGhoshal"
-            style="border-radius:50%;"
-        />
-        <br />
-        <sub><b>@ProfessorGhoshal</b></sub>
-    </a>
-</td>
-
-
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/samertall">
-        <img
-            src="https://avatars.githubusercontent.com/u/52387110?v=4"
-            width="80"
-            height="80"
-            alt="@samertall"
-            style="border-radius:50%;"
-        />
-        <br />
-        <sub><b>@samertall</b></sub>
-    </a>
 </td>
 
 </tr><tr>
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/sarbatra3">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/nithin42" style="text-decoration:none;">
+
+        <img
+            src="https://avatars.githubusercontent.com/u/52503252?v=4"
+            width="88"
+            height="88"
+            alt="@nithin42"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
+        />
+
+        <br /><br />
+
+        <strong>@nithin42</strong>
+
+    </a>
+
+</td>
+
+
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/pandasipra76-cell" style="text-decoration:none;">
+
+        <img
+            src="https://avatars.githubusercontent.com/u/259558725?v=4"
+            width="88"
+            height="88"
+            alt="@pandasipra76-cell"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
+        />
+
+        <br /><br />
+
+        <strong>@pandasipra76-cell</strong>
+
+    </a>
+
+</td>
+
+
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/ProfessorGhoshal" style="text-decoration:none;">
+
+        <img
+            src="https://avatars.githubusercontent.com/u/261142245?v=4"
+            width="88"
+            height="88"
+            alt="@ProfessorGhoshal"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
+        />
+
+        <br /><br />
+
+        <strong>@ProfessorGhoshal</strong>
+
+    </a>
+
+</td>
+
+
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/samertall" style="text-decoration:none;">
+
+        <img
+            src="https://avatars.githubusercontent.com/u/52387110?v=4"
+            width="88"
+            height="88"
+            alt="@samertall"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
+        />
+
+        <br /><br />
+
+        <strong>@samertall</strong>
+
+    </a>
+
+</td>
+
+
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/sarbatra3" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/352874139?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@sarbatra3"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@sarbatra3</b></sub>
+
+        <br /><br />
+
+        <strong>@sarbatra3</strong>
+
     </a>
+
 </td>
 
+</tr><tr>
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/Scottcjn">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/Scottcjn" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/121303252?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@Scottcjn"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@Scottcjn</b></sub>
+
+        <br /><br />
+
+        <strong>@Scottcjn</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/shaaravraghu">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/shaaravraghu" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/195157135?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@shaaravraghu"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@shaaravraghu</b></sub>
+
+        <br /><br />
+
+        <strong>@shaaravraghu</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/souzaonofre">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/souzaonofre" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/12885?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@souzaonofre"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@souzaonofre</b></sub>
+
+        <br /><br />
+
+        <strong>@souzaonofre</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/wesalee83-dev">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/wesalee83-dev" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/248091297?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@wesalee83-dev"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@wesalee83-dev</b></sub>
+
+        <br /><br />
+
+        <strong>@wesalee83-dev</strong>
+
     </a>
+
 </td>
 
 
-<td align="center" valign="top" width="16.66%">
-    <a href="https://github.com/yueffhjg">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="https://github.com/yueffhjg" style="text-decoration:none;">
+
         <img
             src="https://avatars.githubusercontent.com/u/352319362?v=4"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@yueffhjg"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@yueffhjg</b></sub>
+
+        <br /><br />
+
+        <strong>@yueffhjg</strong>
+
     </a>
+
 </td>
 
 </tr>
+</tbody>
 </table>
+
+<p>
+    <sub>BUILT WITH ♥ AND THE GITHUB API</sub>
+</p>
 
 </div>
 
