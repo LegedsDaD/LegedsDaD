@@ -1,0 +1,46 @@
+
+name: Update GitHub Followers Gallery
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Every day at 00:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-followers:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Update followers gallery
+        env:
+          GITHUB_USERNAME: LegedsDaD
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_followers.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+
+          if git diff --cached --quiet; then
+            echo "No changes in followers gallery."
+          else
+            git commit -m "Update GitHub followers gallery"
+            git push
+          fi
