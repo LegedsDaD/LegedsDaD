@@ -55,13 +55,11 @@ def fetch_followers():
     return followers
 
 
+
 def generate_gallery(followers):
-    """Generate a professional five-column followers gallery."""
-
     if not followers:
-        return "<p align='center'>No followers yet!</p>"
+        return "<p>No followers yet!</p>"
 
-    # Alphabetical sorting
     followers = sorted(
         followers,
         key=lambda follower: follower["login"].lower()
@@ -71,92 +69,42 @@ def generate_gallery(followers):
     rows = []
 
     for i in range(0, len(followers), columns):
-
         cells = []
 
         for follower in followers[i:i + columns]:
+            username = html.escape(follower["login"], quote=True)
+            profile_url = html.escape(follower["html_url"], quote=True)
+            avatar_url = html.escape(follower["avatar_url"], quote=True)
 
-            username = html.escape(
-                follower["login"],
-                quote=True
+            cell = (
+                '<td align="center" width="20%">'
+                f'<a href="{profile_url}">'
+                f'<img src="{avatar_url}" width="80" height="80" '
+                f'alt="@{username}" />'
+                '</a><br />'
+                f'<a href="{profile_url}"><strong>@{username}</strong></a>'
+                '</td>'
             )
-
-            profile_url = html.escape(
-                follower["html_url"],
-                quote=True
-            )
-
-            avatar_url = html.escape(
-                follower["avatar_url"],
-                quote=True
-            )
-
-            cell = f"""
-<td align="center" valign="middle" width="20%"
-    style="padding:22px 8px; border:1px solid #30363d;">
-
-    <a href="{profile_url}" style="text-decoration:none;">
-
-        <img
-            src="{avatar_url}"
-            width="88"
-            height="88"
-            alt="@{username}"
-            style="
-                width:88px;
-                height:88px;
-                border-radius:50%;
-                object-fit:cover;
-                border:3px solid #58a6ff;
-            "
-        />
-
-        <br /><br />
-
-        <strong>@{username}</strong>
-
-    </a>
-
-</td>
-"""
 
             cells.append(cell)
 
-        # Keep every row exactly five columns.
         while len(cells) < columns:
-            cells.append(
-                '<td width="20%" style="padding:22px 8px; border:1px solid #30363d;"></td>'
-            )
+            cells.append('<td width="20%"></td>')
 
-        rows.append(
-            "<tr>\n"
-            + "\n".join(cells)
-            + "\n</tr>"
-        )
+        rows.append('<tr>' + ''.join(cells) + '</tr>')
 
-    gallery = f"""
-<div align="center">
+    gallery = (
+        '<div align="center">\n'
+        '<h3>✦ THE PEOPLE BEHIND THE SUPPORT ✦</h3>\n'
+        f'<p><strong>{len(followers)} amazing people are following me!</strong></p>\n'
+        '<table width="100%">\n'
+        + ''.join(rows) +
+        '\n</table>\n'
+        '<p><sub>BUILT WITH ♥ AND THE GITHUB API</sub></p>\n'
+        '</div>'
+    )
 
-<h3>✦ THE PEOPLE BEHIND THE SUPPORT ✦</h3>
-
-<p>
-    <strong>{len(followers)} FOLLOWERS</strong>
-    &nbsp; • &nbsp;
-    <sub>THANK YOU FOR BEING HERE</sub>
-</p>
-
-<table width="100%" align="center">
-<tbody>
-{''.join(rows)}
-</tbody>
-</table>
-
-<p>
-    <sub>BUILT WITH ♥ AND THE GITHUB API</sub>
-</p>
-
-</div>
-"""
+    return gallery
 
     return textwrap.dedent(gallery).strip()
 
