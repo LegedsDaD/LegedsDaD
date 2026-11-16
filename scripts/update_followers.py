@@ -20,7 +20,7 @@ HEADERS = {
 
 
 def fetch_followers():
-    """Fetch all GitHub followers using API pagination."""
+    """Fetch all GitHub followers."""
 
     followers = []
     page = 1
@@ -56,19 +56,18 @@ def fetch_followers():
 
 
 def generate_gallery(followers):
-    """Generate an aligned HTML followers gallery."""
+    """Generate a professional five-column followers gallery."""
 
     if not followers:
-        return "<p>No followers yet!</p>"
+        return "<p align='center'>No followers yet!</p>"
 
-    # Sort followers alphabetically.
-    # Avatar and username always come from the same object.
+    # Alphabetical sorting
     followers = sorted(
         followers,
         key=lambda follower: follower["login"].lower()
     )
 
-    columns = 6
+    columns = 5
     rows = []
 
     for i in range(0, len(followers), columns):
@@ -93,27 +92,40 @@ def generate_gallery(followers):
             )
 
             cell = f"""
-<td align="center" valign="top" width="16.66%">
-    <a href="{profile_url}">
+<td align="center" valign="middle" width="20%"
+    style="padding:22px 8px; border:1px solid #30363d;">
+
+    <a href="{profile_url}" style="text-decoration:none;">
+
         <img
             src="{avatar_url}"
-            width="80"
-            height="80"
+            width="88"
+            height="88"
             alt="@{username}"
-            style="border-radius:50%;"
+            style="
+                width:88px;
+                height:88px;
+                border-radius:50%;
+                object-fit:cover;
+                border:3px solid #58a6ff;
+            "
         />
-        <br />
-        <sub><b>@{username}</b></sub>
+
+        <br /><br />
+
+        <strong>@{username}</strong>
+
     </a>
+
 </td>
 """
 
             cells.append(cell)
 
-        # Fill empty cells to maintain six-column alignment.
+        # Keep every row exactly five columns.
         while len(cells) < columns:
             cells.append(
-                '<td width="16.66%"></td>'
+                '<td width="20%" style="padding:22px 8px; border:1px solid #30363d;"></td>'
             )
 
         rows.append(
@@ -125,23 +137,32 @@ def generate_gallery(followers):
     gallery = f"""
 <div align="center">
 
+<h3>✦ THE PEOPLE BEHIND THE SUPPORT ✦</h3>
+
 <p>
-    <b>🌟 {len(followers)} amazing people are following me!</b>
+    <strong>{len(followers)} FOLLOWERS</strong>
+    &nbsp; • &nbsp;
+    <sub>THANK YOU FOR BEING HERE</sub>
 </p>
 
-<table>
+<table width="100%" align="center">
+<tbody>
 {''.join(rows)}
+</tbody>
 </table>
+
+<p>
+    <sub>BUILT WITH ♥ AND THE GITHUB API</sub>
+</p>
 
 </div>
 """
 
-    # Remove unwanted indentation.
     return textwrap.dedent(gallery).strip()
 
 
 def update_readme(gallery):
-    """Replace only the followers section in README.md."""
+    """Update only the followers section in README."""
 
     with open(
         README_FILE,
@@ -152,24 +173,17 @@ def update_readme(gallery):
         readme = file.read()
 
     if START_MARKER not in readme:
-        raise ValueError(
-            "FOLLOWERS:START marker not found in README.md"
-        )
+        raise ValueError("FOLLOWERS:START marker not found!")
 
     if END_MARKER not in readme:
-        raise ValueError(
-            "FOLLOWERS:END marker not found in README.md"
-        )
+        raise ValueError("FOLLOWERS:END marker not found!")
 
     start = readme.index(START_MARKER) + len(START_MARKER)
     end = readme.index(END_MARKER)
 
     if start > end:
-        raise ValueError(
-            "Invalid followers marker order!"
-        )
+        raise ValueError("Invalid followers marker order!")
 
-    # Ensure HTML does not become a Markdown code block.
     gallery = textwrap.dedent(gallery).strip()
 
     updated_readme = (
