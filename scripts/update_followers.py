@@ -12,7 +12,7 @@ README_FILE = "README.md"
 START_MARKER = "<!-- FOLLOWERS:START -->"
 END_MARKER = "<!-- FOLLOWERS:END -->"
 
-headers = {
+HEADERS = {
     "Authorization": f"Bearer {TOKEN}",
     "Accept": "application/vnd.github+json",
     "X-GitHub-Api-Version": "2022-11-28"
@@ -20,6 +20,8 @@ headers = {
 
 
 def fetch_followers():
+    """Fetch all GitHub followers using API pagination."""
+
     followers = []
     page = 1
 
@@ -32,7 +34,7 @@ def fetch_followers():
 
         response = requests.get(
             url,
-            headers=headers,
+            headers=HEADERS,
             timeout=30
         )
 
@@ -54,13 +56,23 @@ def fetch_followers():
 
 
 def generate_gallery(followers):
+    """Generate an aligned HTML followers gallery."""
+
     if not followers:
         return "<p>No followers yet!</p>"
+
+    # Sort followers alphabetically.
+    # Avatar and username always come from the same object.
+    followers = sorted(
+        followers,
+        key=lambda follower: follower["login"].lower()
+    )
 
     columns = 6
     rows = []
 
     for i in range(0, len(followers), columns):
+
         cells = []
 
         for follower in followers[i:i + columns]:
@@ -81,14 +93,14 @@ def generate_gallery(followers):
             )
 
             cell = f"""
-<td align="center" width="16.66%">
+<td align="center" valign="top" width="16.66%">
     <a href="{profile_url}">
         <img
             src="{avatar_url}"
             width="80"
             height="80"
             alt="@{username}"
-            style="border-radius: 50%;"
+            style="border-radius:50%;"
         />
         <br />
         <sub><b>@{username}</b></sub>
@@ -98,29 +110,38 @@ def generate_gallery(followers):
 
             cells.append(cell)
 
-        # Fill remaining columns
+        # Fill empty cells to maintain six-column alignment.
         while len(cells) < columns:
-            cells.append("<td></td>")
+            cells.append(
+                '<td width="16.66%"></td>'
+            )
 
         rows.append(
-            "<tr>" + "".join(cells) + "</tr>"
+            "<tr>\n"
+            + "\n".join(cells)
+            + "\n</tr>"
         )
 
     gallery = f"""
 <div align="center">
-    <p><b>{len(followers)} amazing people are following me!</b></p>
 
-    <table>
-        {''.join(rows)}
-    </table>
+<p>
+    <b>🌟 {len(followers)} amazing people are following me!</b>
+</p>
+
+<table>
+{''.join(rows)}
+</table>
+
 </div>
 """
 
-    # Remove unwanted indentation
+    # Remove unwanted indentation.
     return textwrap.dedent(gallery).strip()
 
 
 def update_readme(gallery):
+    """Replace only the followers section in README.md."""
 
     with open(
         README_FILE,
@@ -132,12 +153,12 @@ def update_readme(gallery):
 
     if START_MARKER not in readme:
         raise ValueError(
-            "FOLLOWERS:START marker not found!"
+            "FOLLOWERS:START marker not found in README.md"
         )
 
     if END_MARKER not in readme:
         raise ValueError(
-            "FOLLOWERS:END marker not found!"
+            "FOLLOWERS:END marker not found in README.md"
         )
 
     start = readme.index(START_MARKER) + len(START_MARKER)
@@ -148,8 +169,7 @@ def update_readme(gallery):
             "Invalid followers marker order!"
         )
 
-    # Ensure generated HTML is not interpreted as
-    # a Markdown indented code block.
+    # Ensure HTML does not become a Markdown code block.
     gallery = textwrap.dedent(gallery).strip()
 
     updated_readme = (
